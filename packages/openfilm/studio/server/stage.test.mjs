@@ -26,7 +26,9 @@ async function stageOf(dir, query = '') {
   await new Promise((ok) => server.listen(0, '127.0.0.1', ok));
   const origin = `http://127.0.0.1:${server.address().port}`;
   files = folderFiles(dir, { timelineInject: `<script>${HOST_FLAG}</script><script>${STAGE.replaceAll('__EDITOR__', JSON.stringify(origin))}</script>` });
-  const browser = await launch();
+  /* the platform's fonts as CI draws them: on a zh-CN Windows, sans-serif and monospace map to other fonts
+     (Microsoft YaHei, not Arial), whose widths and line boxes differ past the half pixel the tests hold to */
+  const browser = await launch({ args: ['--lang=en-US'] });
   const close = async () => { await browser.close(); server.closeAllConnections?.(); server.close(); };
   const page = await browser.newPage({ viewport: { width: 320, height: 180 } });
   /* a setup that fails closes what it opened: a browser left open keeps the test file, and the run, from ending */
