@@ -37,8 +37,11 @@ if (process.argv.includes('--pool')) {
           await say({ type: 'done', id, result });
           return;
         } catch (e) {
-          if (tries > 1 || signal.aborted || !browserFailed(e)) throw e;
+          if (tries > 2 || signal.aborted || !browserFailed(e)) throw e;
           process.stderr.write(`openfilm: ${e instanceof Error ? e.message.split('\n')[0] : e}: drawn again in new browsers\n`);
+          /* a moment for the browsers that ended to be gone: new ones started in their place, at once, can fail the
+             same way (their ports, their memory still held) */
+          await new Promise((r) => setTimeout(r, 500));
         }
       }
     } catch (e) {
@@ -74,8 +77,10 @@ if (process.argv.includes('--pool')) {
           });
           break;
         } catch (e) {
-          if (tries > 1 || abort.signal.aborted || !browserFailed(e)) throw e;
+          if (tries > 2 || abort.signal.aborted || !browserFailed(e)) throw e;
           process.stderr.write(`openfilm: ${e instanceof Error ? e.message.split('\n')[0] : e}: drawn again in a new browser\n`);
+          /* a moment for the browser that ended to be gone: one started in its place, at once, can fail the same way */
+          await new Promise((r) => setTimeout(r, 500));
         }
       }
       await say({ type: 'done', result });
