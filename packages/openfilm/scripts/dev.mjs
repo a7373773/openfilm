@@ -12,12 +12,17 @@
  */
 import { spawn } from 'node:child_process';
 import { chmodSync, existsSync, mkdirSync, readFileSync, rmSync, watch, writeFileSync } from 'node:fs';
+import { createRequire } from 'node:module';
 import { homedir } from 'node:os';
-import { join } from 'node:path';
+import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
+const require = createRequire(import.meta.url);
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const DEV = join(ROOT, '.dev');
+/* vite's command wherever this checkout's dependencies are: in this package's node_modules (pnpm's isolated layout, what
+   the workspace and CI install) or in the workspace root's (a hoisted install, such as a global node-linker) */
+const VITE = join(dirname(require.resolve('vite/package.json')), 'bin', 'vite.js');
 const env = {
   ...process.env,
   OPENFILM_HOME: join(DEV, 'home'),
@@ -99,7 +104,7 @@ const run = (/** @type {string[]} */ args) => {
 };
 
 /* the editor: built again on every change to studio/ui; Studio serves the files from disk */
-run([join(ROOT, 'node_modules', 'vite', 'bin', 'vite.js'), 'build', '--watch', '--config', 'studio/ui/vite.config.ts']);
+run([VITE, 'build', '--watch', '--config', 'studio/ui/vite.config.ts']);
 
 /* Studio, started again when its code changes (pages open on it reconnect by themselves) */
 let server = run(['studio/server/main.mjs']);
