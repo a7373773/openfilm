@@ -246,6 +246,8 @@ export async function seekableCopies(files, root, { signal, plays, slow = true, 
       };
       let result = await shared();
       if (result === 'cancelled' && !signal?.aborted) result = await shared();
+      /* cancelled while its copy was made, or just after it was made: the copies are not this caller's */
+      if (signal?.aborted) return;
       if (result === 'made') known(out);
       else if (result === 'failed') failed?.(file);
     }
@@ -280,6 +282,8 @@ async function makeCopy(file, out, need, signal, fine = false) {
   /* decoded and written on the graphics chip when it can (encoders.mjs), else on the processor */
   let stalled = false;
   const make = async (/** @type {string | null} */ encoder, /** @type {string[]} */ decoding) => {
+    /* cancelled while the encoders were being found: nothing is started (the listener below is not on yet) */
+    if (signal?.aborted) throw new Error('cancelled');
     const chip = Boolean(encoder) || decoding.length > 0;
     /* a chip that hung is not tried again for this copy: straight to the processor */
     if (chip && stalled) throw new Error('the graphics chip hung');
@@ -293,6 +297,8 @@ async function makeCopy(file, out, need, signal, fine = false) {
     /* its whole tree: an ffmpeg that is a shim (Windows' package managers) runs the real one as its child */
     const stop = () => kill(run.proc);
     signal?.addEventListener('abort', stop, { once: true });
+    /* an abort between the check above and the listener: taken all the same, as if it had caught it */
+    if (signal?.aborted) stop();
     /* on the chip, the part must keep growing: one that does not for STALL_MS is stopped */
     let watch;
     const hung = new Promise((_, fail) => {
