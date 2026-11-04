@@ -59,7 +59,9 @@ try {
     const dest = join(tmp, name.replace(/[@/]/g, '_'));
     execFileSync('pnpm', ['pack', '--pack-destination', dest], { cwd: pkgDir, stdio: ['ignore', 'ignore', 'inherit'], shell: process.platform === 'win32' });
     const tgz = join(dest, readdirSync(dest).find((f) => f.endsWith('.tgz')));
-    const files = tar(['-tzf', tgz]).trim().split('\n').map((f) => f.replace(/^package\//, ''));
+    /* a tar on Windows (Git's, or Windows' own) ends its lines with CRLF: left on, every path keeps a `\r` and none
+       of the files package.json points at is found */
+    const files = tar(['-tzf', tgz]).trim().split(/\r?\n/).map((f) => f.replace(/^package\//, ''));
     const read = (file) => tar(['-xzOf', tgz, `package/${file}`]);
     const manifest = JSON.parse(read('package.json'));
 
