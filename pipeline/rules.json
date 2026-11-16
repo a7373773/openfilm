@@ -54,21 +54,24 @@
   },
   "music": {
     "genres": [
-      "light",
-      "acoustic",
+      "light-instrumental",
       "piano",
-      "folk-pop"
+      "acoustic"
     ],
+    "mood": "calm",
     "bpm_range": [
-      88,
-      112
+      62,
+      92
     ],
     "rms_swing_max_db": 7,
     "min_len_ratio": 1.05,
-    "rule": "以轻音乐为主、愉快轻松；BPM 88-112、能量平稳不突兀、时长覆盖成片；与场景情绪匹配（田园自然=木吉他/尤克里里/马林巴）",
+    "onset_max_per_s": 12,
+    "centroid_max_hz": 1600,
+    "lowband_max": 0.15,
     "blacklist": {
-      "Wallpaper.mp3": "合成器+鼓组，偏电子，不符合轻音乐"
-    }
+      "Wallpaper.mp3": "合成器+鼓组，偏电子，不符合纯音乐"
+    },
+    "rule": "很轻的纯音乐：独奏钢琴/木吉他为主，不要太跳跃(onset<12/s)、不要太吵(低频<0.15)、不要太快(62-92 BPM)、能量平稳，时长覆盖成片"
   },
   "duration": {
     "min_s": 120,

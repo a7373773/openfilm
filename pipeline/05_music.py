@@ -66,8 +66,8 @@ for f in files:
         # 舒缓：慢、稀疏、暗、轻、平稳
         s = 0.0
         s += max(0.0, 30 - max(0.0, info["bpm"] - 82)*1.6 - max(0.0, 62 - info["bpm"])*1.2)
-        s += max(0.0, 25 - info["onset"]*9.0)
-        s += 20 - min(20, max(0.0, info["centroid"] - 1100)/140)
+        s += max(0.0, 25 - max(0.0, info["onset"] - 5.0)*2.4)
+        s += 20 - min(20, max(0.0, info["centroid"] - 1100)/160)
         s += 15 - min(15, abs(info["mean_db"] + 20)*1.5)
         s += 10 - min(10, info["swing"]*1.2)
     else:

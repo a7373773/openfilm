@@ -56,10 +56,11 @@ for s in shots:
     if c and c.get("sharp", 1e9) < RULES["quality"]["min_sharp"] and c.get("sat", 0) > 40:
         warn("QUALITY", "%s sharp=%.0f low" % (s["file"], c["sharp"]))
 
-# --- 4. beat grid ---
+# --- 4. beat grid (uses the EDL's own beat unit, so re-timed cuts stay valid) ---
+BEAT = float(edl.get("beat", RULES["beat"]["beat_unit_s"]))
 for s in shots:
-    n = s["dur"] / RULES["beat"]["beat_unit_s"]
-    if abs(n - round(n)) > 0.02: fail("BEAT", "%s dur=%.3f not on beat grid" % (s["file"], s["dur"]))
+    n = s["dur"] / BEAT
+    if abs(n - round(n)) > 0.02: fail("BEAT", "%s dur=%.3f not on %.3fs grid" % (s["file"], s["dur"], BEAT))
 
 # --- 5. transition mix ---
 dirs = [s for s in shots[1:] if s["xf"] != RULES["transitions"]["default"]]
