@@ -1,0 +1,364 @@
+{
+ "shots": [
+  {
+   "file": "REC-0020-A.mp4",
+   "start": 68,
+   "dur": 6.0,
+   "speed": 1.0,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0694,
+    0.9929,
+    0.0694,
+    0.9929,
+    0.0694,
+    0.9929
+   ],
+   "scene": "mountain",
+   "p_landscape": 0.896,
+   "score": 1.588,
+   "mean_diff": 15.8
+  },
+  {
+   "file": "REC-0012-A.mp4",
+   "start": 30,
+   "dur": 3.75,
+   "speed": 1.0,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0305,
+    0.9989,
+    0.0305,
+    0.9989,
+    0.0305,
+    0.9989
+   ],
+   "scene": "water",
+   "p_landscape": 0.793,
+   "score": 1.481,
+   "mean_diff": 31.8
+  },
+  {
+   "file": "REC-0015-A.mp4",
+   "start": 65,
+   "dur": 3.75,
+   "speed": 0.5,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0474,
+    0.9989,
+    0.0474,
+    0.9989,
+    0.0474,
+    0.9989
+   ],
+   "scene": "mountain",
+   "p_landscape": 0.863,
+   "score": 1.533,
+   "mean_diff": 30.5
+  },
+  {
+   "file": "REC-0021-A.mp4",
+   "start": 62,
+   "dur": 3.75,
+   "speed": 1.0,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0713,
+    0.9858,
+    0.0713,
+    0.9858,
+    0.0713,
+    0.9858
+   ],
+   "scene": "water",
+   "p_landscape": 0.887,
+   "score": 1.433,
+   "mean_diff": 21.3
+  },
+  {
+   "file": "REC-0016-A.mp4",
+   "start": 23,
+   "dur": 2.5,
+   "speed": 1.0,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0764,
+    0.9936,
+    0.0764,
+    0.9936,
+    0.0764,
+    0.9936
+   ],
+   "scene": "mountain",
+   "p_landscape": 0.891,
+   "score": 1.572,
+   "mean_diff": 21.3
+  },
+  {
+   "file": "REC-0014-A.mp4",
+   "start": 44,
+   "dur": 3.75,
+   "speed": 0.5,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0527,
+    0.9995,
+    0.0527,
+    0.9995,
+    0.0527,
+    0.9995
+   ],
+   "scene": "water",
+   "p_landscape": 0.776,
+   "score": 1.454,
+   "mean_diff": 42.2
+  },
+  {
+   "file": "REC-0020-A.mp4",
+   "start": 61,
+   "dur": 3.75,
+   "speed": 1.0,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0586,
+    0.9948,
+    0.0586,
+    0.9948,
+    0.0586,
+    0.9948
+   ],
+   "scene": "mountain",
+   "p_landscape": 0.908,
+   "score": 1.559,
+   "mean_diff": 24.9
+  },
+  {
+   "file": "REC-0022-A.mp4",
+   "start": 0,
+   "dur": 2.5,
+   "speed": 1.0,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0716,
+    0.8919,
+    0.0716,
+    0.8919,
+    0.0716,
+    0.8919
+   ],
+   "scene": "water",
+   "p_landscape": 0.766,
+   "score": 1.402,
+   "mean_diff": 11.7
+  },
+  {
+   "file": "REC-0015-A.mp4",
+   "start": 57,
+   "dur": 3.75,
+   "speed": 0.5,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0605,
+    0.9994,
+    0.0605,
+    0.9994,
+    0.0605,
+    0.9994
+   ],
+   "scene": "mountain",
+   "p_landscape": 0.865,
+   "score": 1.521,
+   "mean_diff": 38.1
+  },
+  {
+   "file": "REC-0021-A.mp4",
+   "start": 53,
+   "dur": 3.75,
+   "speed": 1.0,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0681,
+    0.9948,
+    0.0681,
+    0.9948,
+    0.0681,
+    0.9948
+   ],
+   "scene": "water",
+   "p_landscape": 0.868,
+   "score": 1.43,
+   "mean_diff": 31.3
+  },
+  {
+   "file": "REC-0012-A.mp4",
+   "start": 0,
+   "dur": 3.75,
+   "speed": 1.0,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0483,
+    0.9955,
+    0.0483,
+    0.9955,
+    0.0483,
+    0.9955
+   ],
+   "scene": "mountain",
+   "p_landscape": 0.817,
+   "score": 1.483,
+   "mean_diff": 23.5
+  },
+  {
+   "file": "REC-0014-A.mp4",
+   "start": 50,
+   "dur": 2.5,
+   "speed": 1.0,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0287,
+    1.0,
+    0.0287,
+    1.0,
+    0.0287,
+    1.0
+   ],
+   "scene": "mountain",
+   "p_landscape": 0.874,
+   "score": 1.421,
+   "mean_diff": 44.6
+  },
+  {
+   "file": "REC-0022-A.mp4",
+   "start": 110,
+   "dur": 3.75,
+   "speed": 0.5,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0283,
+    0.9989,
+    0.0283,
+    0.9989,
+    0.0283,
+    0.9989
+   ],
+   "scene": "water",
+   "p_landscape": 0.728,
+   "score": 1.39,
+   "mean_diff": 38.8
+  },
+  {
+   "file": "REC-0018-A.mp4",
+   "start": 7,
+   "dur": 3.75,
+   "speed": 1.0,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0773,
+    0.9934,
+    0.0773,
+    0.9934,
+    0.0773,
+    0.9934
+   ],
+   "scene": "water",
+   "p_landscape": 0.556,
+   "score": 1.23,
+   "mean_diff": 29.6
+  },
+  {
+   "file": "REC-0013-A.mp4",
+   "start": 53,
+   "dur": 3.75,
+   "speed": 1.0,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0522,
+    1.0,
+    0.0522,
+    1.0,
+    0.0522,
+    1.0
+   ],
+   "scene": "water",
+   "p_landscape": 0.579,
+   "score": 1.197,
+   "mean_diff": 28.9
+  },
+  {
+   "file": "REC-0007-A.mp4",
+   "start": 101,
+   "dur": 2.5,
+   "speed": 1.0,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0489,
+    0.9961,
+    0.0489,
+    0.9961,
+    0.0489,
+    0.9961
+   ],
+   "scene": "water",
+   "p_landscape": 0.494,
+   "score": 1.11,
+   "mean_diff": 42.8
+  },
+  {
+   "file": "REC-0013-A.mp4",
+   "start": 49,
+   "dur": 3.75,
+   "speed": 0.5,
+   "xfade": 0.5,
+   "transition": "fade",
+   "levels": [
+    0.0504,
+    1.0,
+    0.0504,
+    1.0,
+    0.0504,
+    1.0
+   ],
+   "scene": "water",
+   "p_landscape": 0.617,
+   "score": 1.27,
+   "mean_diff": 32.6
+  },
+  {
+   "file": "REC-0016-A.mp4",
+   "start": 41,
+   "dur": 5.0,
+   "speed": 1.0,
+   "xfade": 0.0,
+   "transition": "fade",
+   "levels": [
+    0.0278,
+    0.9897,
+    0.0278,
+    0.9897,
+    0.0278,
+    0.9897
+   ],
+   "scene": "mountain",
+   "p_landscape": 0.904,
+   "score": 1.535,
+   "mean_diff": 36.1
+  }
+ ]
+}
