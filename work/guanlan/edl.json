@@ -1,0 +1,91 @@
+{
+ "meta": {
+  "title": "一版秋花",
+  "bpm": 77,
+  "beat": 0.779221,
+  "bar": 3.116883
+ },
+ "shots": [
+  {
+   "still": "card_open.png",
+   "dur": 2.338,
+   "trans": 0.8,
+   "trans_type": "fadewhite",
+   "speed": 1,
+   "start": 0
+  },
+  {
+   "file": "C1910S03.MP4",
+   "start": 0.2,
+   "dur": 4.696,
+   "speed": 0.8,
+   "trans": 0
+  },
+  {
+   "file": "C1911S03.MP4",
+   "start": 0.05,
+   "dur": 3.117,
+   "speed": 0.85,
+   "trans": 0
+  },
+  {
+   "file": "C1912S03.MP4",
+   "start": 0.1,
+   "dur": 3.117,
+   "speed": 0.85,
+   "trans": 0
+  },
+  {
+   "file": "C1913S03.MP4",
+   "start": 0.2,
+   "dur": 2.338,
+   "speed": 1,
+   "trans": 0
+  },
+  {
+   "file": "C1915S03.MP4",
+   "start": 0.15,
+   "dur": 1.558,
+   "speed": 1,
+   "trans": 0
+  },
+  {
+   "file": "C1910S03.MP4",
+   "start": 3.96,
+   "dur": 1.558,
+   "speed": 1,
+   "trans": 0,
+   "zoom": [
+    1,
+    1.05
+   ]
+  },
+  {
+   "file": "C1912S03.MP4",
+   "start": 2.75,
+   "dur": 3.117,
+   "speed": 0.5,
+   "trans": 0,
+   "zoom": [
+    1,
+    1.1
+   ]
+  },
+  {
+   "file": "C1916S03.MP4",
+   "start": 2.6,
+   "dur": 4.679,
+   "speed": 0.5,
+   "trans": 0.7,
+   "trans_type": "fadewhite"
+  },
+  {
+   "still": "card_end.png",
+   "dur": 3.3,
+   "trans": 0,
+   "trans_type": "fade",
+   "speed": 1,
+   "start": 0
+  }
+ ]
+}
