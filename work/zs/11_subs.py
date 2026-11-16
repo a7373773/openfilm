@@ -49,7 +49,7 @@ for tag, text in [("cap1","午后 · 抵达"),("cap2","稻田 · 采风"),("cap3
 t_end = T - 8.0
 emit("End", t_end, T-1.6, "\\pos(960,512)", 5, 1100, "中山　2026.11.14", 1, (30, 0x50, 72, -1))
 emit("Credit", t_end+0.6, T-1.6, "\\pos(960,1022)", 2, 1100,
-     "音乐：Carefree — Kevin MacLeod (incompetech.com) · CC BY 4.0", 1, (24, 0x58, 32, 0))
+     "音乐：Sapphire Isle — Kevin MacLeod (incompetech.com) · CC BY 4.0", 1, (24, 0x58, 32, 0))
 
 out = os.path.join(WORK,"titles.ass")
 open(out,"w",encoding="utf-8-sig").write(HDR + "\n".join(ev) + "\n")
