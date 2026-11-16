@@ -1,3 +1,4 @@
+import { pendingMediaBatch } from '@/lib/canvas-media-recovery';
 /**
  * The project's canvas: the board beside the edit where a film's material is made and laid out. Words, pictures,
  * clips, sounds and music are nodes, wired into what is made from them; a cut puts what is wired into it on the
@@ -650,7 +651,13 @@ function BoardView({ shown = true, projectId, folder, files, sources, onAddToFil
     }
     const request = makeRequest(node as MakingNode, inputs, makeName(node as MakingNode), choiceOf(providers, node.make, node.via, node.model)?.spec);
     if (!String(request.args.prompt ?? request.args.text).trim()) { runErrors.set(`${projectId}/${id}`, t('canvas.make.noWords')); runsChanged(); return Promise.resolve(false); }
-    const pick = node.via ? { via: node.via, ...(node.model ? { model: node.model } : {}) } : {};
+    const pick = {
+      ...(node.via ? { via: node.via, ...(node.model ? { model: node.model } : {}) } : {}),
+      recoveryScope: JSON.stringify(inputs.filter(input => 'path' in input).map(input => {
+        const file = byPath.get(input.path);
+        return [input.path, file?.size, file?.mtimeMs];
+      })),
+    };
     const say = { nothing: t('canvas.make.nothing'), balance: t('canvas.make.noBalance') };
     /* two or four at once: one after another, each a version of its own (a clip asked again is made anew) */
     const count = node.opts?.count ?? 1;
@@ -666,13 +673,16 @@ function BoardView({ shown = true, projectId, folder, files, sources, onAddToFil
     if (count < 2) return timed(request);
     return (async () => {
       let made = false;
-      for (let i = 0; i < count; i++) {
+      const batch=await pendingMediaBatch([projectId,boardId,id,pick.recoveryScope],request,pick,count);
+      for (let i = batch.completed; i < count; i++) {
         const again = i ? makeRequest(node as MakingNode, inputs, makeName(node as MakingNode), spec) : request;
         if (node.make === 'video') again.args.force = 'true';
         const ok = await timed(again);
         made ||= ok;
-        if (!ok) break;
+        if (!ok) return made;
+        batch.advance(i+1);
       }
+      batch.finish();
       return made;
     })();
   };

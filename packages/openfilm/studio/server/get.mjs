@@ -40,6 +40,7 @@ import { kindOf, modelFor, providerKey } from './keys.mjs';
 import { chooseProvider, freshProviders, listProviders, providerSettings } from './providers/index.mjs';
 import { addedDir } from './providers/added.mjs';
 import { mediaSeconds, translatedLines, translationAsk } from './providers/common.mjs';
+import { mediaInput } from './media-input.mjs';
 import { CALL_TIMEOUT_SEC, callService, servicesHelp } from './custom-services.mjs';
 
 /**
@@ -190,6 +191,8 @@ const ADD_ONE = () => `A service not listed is added as a provider: ${join(added
   + 'written from the service\'s API docs; once the person adds its key in Settings → Services, it makes media like the others, on the canvas too. '
   + 'Try it with `openfilm get <verb> --via <id>`.';
 
+for (const spec of Object.values(VERBS)) if (spec.dir) spec.options.fresh = {};
+
 /** How long the person has to answer a question about spending. */
 const ASK_WAIT_MS = 15 * 60_000;
 /** The most a file sent to a provider may be (a recording's speech, a frame). */
@@ -300,10 +303,11 @@ async function projectFile(root, rel, name, want) {
  * `model`: the provider's model for this run, instead of the person's choice for this kind of media.
  * @param {string} root @param {string} verb @param {Record<string, unknown>} given
  * `tell`: says a Notice to the person in Studio.
- * @param {{ via?: string, model?: string, yes?: boolean, ask?: Ask, tell?: (notice: Notice) => void, signal?: AbortSignal }} [options]
+ * @param {{ via?: string, model?: string, operation?: string, yes?: boolean, ask?: Ask, tell?: (notice: Notice) => void, signal?: AbortSignal }} [options]
  */
-export async function runGet(root, verb, given, { via, model, yes = false, ask, tell, signal = new AbortController().signal } = {}) {
-  const args = await checkArgs(root, verb, given);
+export async function runGet(root, verb, given, { via, model, operation, yes = false, ask, tell, signal = new AbortController().signal } = {}) {
+  const { fresh, ...flags } = given;
+  const args = await checkArgs(root, verb, flags);
   if (verb === 'call') {
     const { custom } = await providerSettings();
     const service = custom.find((s) => s.id === args.service);
@@ -332,7 +336,7 @@ export async function runGet(root, verb, given, { via, model, yes = false, ask, 
 
   const spec = VERBS[verb];
   const said = /** @type {string[]} */ ([]);
-  const clock = deadline(spec.timeoutSec + 60, signal);
+  const clock = deadline(provider.id === 'openfilm' ? 50 * 60 : spec.timeoutSec + 60, signal);
   /** @param {Spend} spend */
   const approve = async (spend) => {
     if (yes) return;
@@ -342,6 +346,9 @@ export async function runGet(root, verb, given, { via, model, yes = false, ask, 
   const ctx = {
     key: providerKey(provider, settings)?.key ?? '',
     model: runModel,
+    operation,
+    fresh: fresh === true,
+    openInput: (/** @type {string} */ path) => mediaInput(root, path, { speech: verb === 'asr' && path === args.src, signal: clock.signal }),
     root,
     signal: clock.signal,
     say: (/** @type {string} */ line) => { said.push(line); },
@@ -357,10 +364,10 @@ export async function runGet(root, verb, given, { via, model, yes = false, ask, 
         ...(words ? { prompt: words.length > 200 ? `${words.slice(0, 199).trimEnd()}…` : words } : {}) });
     }
     const result = await provider.run(/** @type {Verb} */ (verb), args, ctx);
-    await land(root, verb, args, result);
+    try { await land(root, verb, args, result); await result.complete?.(); } finally { await result.cleanup?.(); }
     return [...said, show(await receiptFor(root, verb, args, result.receipt))].join('\n');
   } catch (e) {
-    if (clock.timedOut()) throw new GetError(`${provider.name} did not finish within ${spec.timeoutSec + 60} s, so Studio stopped waiting. Nothing landed in the project; try again later.`);
+    if (clock.timedOut()) throw new GetError(`${provider.name} did not finish within ${spec.timeoutSec + 60} s, so Studio stopped waiting. The result may already be complete and charged. Repeat the same request to recover it; do not create another take to fetch it.`);
     if (/** @type {{ code?: string, limit?: boolean }} */ (e)?.code === 'balance' && /** @type {{ limit?: boolean }} */ (e).limit) {
       throw new GetError(`This did not run: the ${provider.name} key reached the spending limit set on it. The person can raise or remove that limit where `
         + `the key was made (${provider.keysUrl}), or use another key. Nothing was made. Stop and tell them; do not run it again until they say so.`, 1, 'balance');
@@ -498,7 +505,9 @@ async function land(root, verb, args, result) {
     if (!(await landsInside(root, abs))) continue;
     if ((await lstat(abs).catch(() => null))?.isSymbolicLink()) await rm(abs);
     await mkdir(dirname(abs), { recursive: true });
-    await writeFile(abs, file.bytes);
+    if ('commit' in file) await file.commit(abs);
+    else if ('bytes' in file) await writeFile(abs, file.bytes);
+    else throw new Error('The provider returned a file that was not downloaded.');
     /* a sound or video made again under its name: the old take's subtitles go (its own are written below) */
     const kind = clipKind(file.path);
     if (kind === 'sound' || kind === 'video') await dropTranscripts(root, file.path);
@@ -745,7 +754,7 @@ export async function getRoute(req, res, parts, asks) {
     return json(res, 200, await libraryGet(verb, given));
   }
   if (parts.length || req.method !== 'POST') throw new HttpError(404, 'no such API');
-  const body = /** @type {{ folder?: unknown, verb?: unknown, args?: unknown, via?: unknown, model?: unknown, yes?: unknown }} */ (await readJson(req));
+  const body = /** @type {{ folder?: unknown, verb?: unknown, args?: unknown, via?: unknown, model?: unknown, operation?: unknown, yes?: unknown }} */ (await readJson(req));
   /* the CLI gone (Ctrl-C): the run stops with it */
   const controller = new AbortController();
   res.once('close', () => { if (!res.writableEnded) controller.abort(); });
@@ -756,6 +765,7 @@ export async function getRoute(req, res, parts, asks) {
     const text = await runGet(root, String(body.verb ?? ''), given, {
       ...(typeof body.via === 'string' && body.via ? { via: body.via } : {}),
       ...(typeof body.model === 'string' && body.model ? { model: body.model } : {}),
+      ...(typeof body.operation === 'string' && /^[\w-]{20,80}$/.test(body.operation) ? { operation: body.operation } : {}),
       yes: body.yes === true,
       ask: (spend) => asks.ask(root, spend, controller.signal),
       tell: (notice) => asks.tell(root, notice),

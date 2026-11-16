@@ -214,9 +214,9 @@ test('the model: the person\'s choice for each kind of media, the provider\'s fi
   };
   assert.equal(await modelOf('tts', { out: 'intro', text: SAID, voice: 'v-1' }), 'eleven_v4_turbo');
   assert.equal(await modelOf('music', { out: 'bed', prompt: 'calm pad' }), 'music_v2');
-  assert.equal(await modelOf('sfx', { out: 'ding', prompt: 'a chime' }), 'eleven_text_to_sound_v2', 'the first');
+  assert.equal(await modelOf('sfx', { out: 'ding', prompt: 'a chime' }), 'eleven_text_to_sound_v3', 'the first');
   assert.equal(await modelOf('music', { out: 'bed', prompt: 'calm pad' }, { model: 'music_v2_5' }), 'music_v2_5');
-  await assert.rejects(runGet(root, 'sfx', { out: 'ding', prompt: 'a chime' }, { model: 'seedance-2.0' }), (e) => e.code === 2 && /--model is one of eleven_text_to_sound_v2 with ElevenLabs/.test(e.message));
+  await assert.rejects(runGet(root, 'sfx', { out: 'ding', prompt: 'a chime' }, { model: 'seedance-2.0' }), (e) => e.code === 2 && /--model is one of eleven_text_to_sound_v3 with ElevenLabs/.test(e.message));
 });
 
 test('video: the person confirms what will be made first, without amounts; no page means ask them and run again with --yes', async () => {
@@ -252,9 +252,11 @@ test('asr: the speech alone is sent, its transcript lands beside the recording, 
   assert.match(readFileSync(join(root, 'assets/upload/talk.vtt'), 'utf8'), /^WEBVTT\n\n00:00:00\.100 --> .*\nOne <00:00:00\.500>two\./);
   const file = (await formOf(calls[0])).get('file');
   const proxy = Buffer.from(await file.arrayBuffer());
-  assert.equal(file.name, 'talk.wav');
-  assert.equal(proxy.readUInt16LE(22), 1, 'mono');
-  assert.equal(proxy.readUInt32LE(24), 16000, '16 kHz');
+  assert.equal(file.name, 'talk.mp3');
+  const mp3=join(root,'speech-proxy.mp3');writeFileSync(mp3,proxy);
+  const facts=JSON.parse(execFileSync('ffprobe',['-v','error','-show_streams','-of','json',mp3],{encoding:'utf8'})).streams[0];
+  assert.equal(facts.channels,1,'mono');assert.equal(Number(facts.sample_rate),16000,'16 kHz');
+  assert.ok(proxy.length<readFileSync(wav).length/4,'speech upload stays compact');
 
   const again = JSON.parse(await runGet(root, 'asr', { src: 'assets/upload/talk.wav' }));
   assert.equal(again.skip, true);
@@ -267,8 +269,8 @@ test('asr: the speech alone is sent, its transcript lands beside the recording, 
 
 test('asr: a recording outside assets/ gets its transcript beside it too; the tools\' files are refused', async () => {
   const root = project();
-  execFileSync('ffmpeg', ['-v', 'error', '-f', 'lavfi', '-i', 'sine=frequency=440:duration=1', join(root, 'talk.wav')]);
-  assert.deepEqual(JSON.parse(await runGet(root, 'asr', { src: 'talk.wav' })), { src: 'talk.wav', text: 'One two.', transcript: 'talk.vtt' });
+  execFileSync('ffmpeg', ['-v', 'error', '-f', 'lavfi', '-i', 'sine=frequency=440:duration=1', join(root, 'talk.mp3')]);
+  assert.deepEqual(JSON.parse(await runGet(root, 'asr', { src: 'talk.mp3' })), { src: 'talk.mp3', text: 'One two.', transcript: 'talk.vtt' });
   assert.match(readFileSync(join(root, 'talk.vtt'), 'utf8'), /^WEBVTT\n\n00:00:00\.100 --> .*\nOne <00:00:00\.500>two\./);
 
   /* a video the film is made like, kept beside the film but not in it */
@@ -483,7 +485,7 @@ test('openfilm get: what can be got here, connected, partly or not at all; wrong
       + 'Until then, take what OpenFilm\'s own library has (its verbs are free and need nothing connected), make sound and pictures in code, '
       + 'or use a service the person has a key for (with its API docs), and save them under assets/. '
       + `\`openfilm get <what> --help\` shows what one kind takes (${media.join(', ')}).\n\n${services()}\n`);
-    assert.match(services(), /^Media services, each used with the person's own key: Brave Search \(web search\), Cartesia \(voice-over\), Doubao \(transcripts\), ElevenLabs \(voice-over, sound effects, music, transcripts\), fal\.ai \(images, video, music, sound effects\), .*, Microsoft Azure \(voice-over\), .*, Tavily \(web search\), Xiaomi MiMo \(voice-over, transcripts\)\. In Studio, the OpenFilm logo at the top left opens Settings/);
+    assert.match(services(), /^Media services, each used with the person's own key: Brave Search \(web search\), Cartesia \(voice-over\), Doubao \(transcripts\), ElevenLabs \(voice-over, sound effects, music, transcripts\), fal\.ai \(images, video, music, sound effects\), .*, Microsoft Azure \(voice-over\), .*, Tavily \(web search\), Volcengine \(video\), Xiaomi MiMo \(voice-over, transcripts\)\. In Studio, the OpenFilm logo at the top left opens Settings/);
 
     /* partly: what is connected, then one line for the rest with the services that make each, then the services there
        are; never who makes what is connected */

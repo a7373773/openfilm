@@ -267,7 +267,7 @@ export const runsChanged = () => { runsVersion += 1; for (const watch of runWatc
 export const useRuns = () => React.useSyncExternalStore((watch) => { runWatchers.add(watch); return () => { runWatchers.delete(watch); }; }, () => runsVersion);
 
 /** Whether it made one (false: it failed, was stopped, or was being made already). */
-export async function startRun(project: string, folder: string, node: string, request: ReturnType<typeof makeRequest>, pick: { via?: string; model?: string }, key: string,
+export async function startRun(project: string, folder: string, node: string, request: ReturnType<typeof makeRequest>, pick: { via?: string; model?: string; recoveryScope?: string }, key: string,
   say: { nothing: string; balance: string }, board = 'main'): Promise<boolean> {
   const id = `${project}/${node}`;
   if (runs.has(id)) return false;
@@ -277,7 +277,7 @@ export async function startRun(project: string, folder: string, node: string, re
   runsChanged();
   try {
     /* the person pressed Make on it: what it costs is not asked again, as an agent's would be */
-    const receipt = JSON.parse(await api.make(folder, request.verb, request.args, { ...pick, yes: true }, abort.signal)) as { src?: string; images?: Array<{ src?: string }> };
+    const receipt = JSON.parse(await api.make(folder, request.verb, request.args, { ...pick, yes: true, recoveryScope: `${board}/${node}/${pick.recoveryScope??''}` }, abort.signal)) as { src?: string; images?: Array<{ src?: string }> };
     const path = receipt.src ?? receipt.images?.[0]?.src;
     if (!path) throw new Error(say.nothing);
     const made = { path, made: key };

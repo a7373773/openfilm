@@ -1,3 +1,4 @@
+import { pendingCanvasMedia } from './lib/canvas-media-recovery';
 /**
  * Studio's API, as the editor calls it (studio/server/server.mjs). Same origin, so the launch key travels as the
  * cookie `/open` set; writes are refused from any other origin.
@@ -240,11 +241,14 @@ export const api = {
    * `yes`: the person asked for it themselves (a node's Make). Not a write a reload waits for: it may take minutes,
    * and aborting it (`signal`) stops it. A run the service's account had too little for throws with `reason: 'balance'`.
    */
-  make: async (folder: string, verb: string, args: Record<string, unknown>, pick: { via?: string; model?: string; yes?: boolean }, signal?: AbortSignal) => {
-    const res = await fetch('/api/get', { method: 'POST', signal, headers: { 'content-type': 'application/json' }, body: JSON.stringify({ folder, verb, args, ...pick }) });
+  make: async (folder: string, verb: string, args: Record<string, unknown>, pick: { via?: string; model?: string; yes?: boolean; recoveryScope?: string }, signal?: AbortSignal) => {
+    const pending = typeof args.out === 'string' ? await pendingCanvasMedia([folder,verb,pick.recoveryScope??'make'],{verb,args},pick) : null;
+    const {recoveryScope:_,...selection}=pick;
+    const res = await fetch('/api/get', { method: 'POST', signal, headers: { 'content-type': 'application/json' }, body: JSON.stringify({ folder, verb, args:pending?.request.args??args, ...selection, ...(pending?{operation:pending.operation}:{}) }) });
     if (res.status === 401) markLocked();
     const body = await res.json().catch(() => ({})) as { ok?: boolean; text?: string; error?: string; reason?: string };
     if (!res.ok || !body.ok) throw Object.assign(new Error(body.text ?? body.error ?? `Studio answered ${res.status}`), body.reason ? { reason: body.reason } : {});
+    pending?.finish();
     return body.text ?? '';
   },
   answerAsk: (askId: string, allow: boolean) => call<{ answered: boolean }>(`get/asks/${encodeURIComponent(askId)}`, { method: 'POST', json: { allow } }),

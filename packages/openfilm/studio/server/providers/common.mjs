@@ -12,27 +12,54 @@ import { basename, extname, join } from 'node:path';
 export const serviceUrl = (/** @type {string} */ name, /** @type {string} */ fallback) =>
   (process.env[`OPENFILM_${name}_URL`]?.trim() || fallback).replace(/\/+$/, '');
 
+/** A service between two of its own processes (a release restarting it), or a gateway before it that lost it a moment. */
+const PASSING = new Set([502, 503, 504, 520, 521, 522, 523, 524]);
+/** How long to wait before saying a request again, then how long at most (tests make it short). */
+export const steadily = { first: 1000, most: 10_000 };
+
 /**
  * `fetch` that answers only when the service said yes. Otherwise it throws a sentence naming the service and its
- * reason, with the key blanked out wherever the service echoed it.
+ * reason, with the key blanked out wherever the service echoed it. `patience`: said again (the same request) while
+ * the service cannot be reached or is passing between processes, for up to that long; `keep`: answers handed back as
+ * they are, for the caller to read (an asynchronous run's 404 or 409).
  * @param {string} service @param {string} url @param {RequestInit} init @param {RunContext} ctx
+ * @param {{ patience?: number, keep?: number[] }} [how]
  */
-export async function call(service, url, init, ctx) {
+export async function call(service, url, init, ctx, how = {}) {
+  const until = Date.now() + (how.patience ?? 0);
   let res;
-  try { res = await fetch(url, { ...init, signal: ctx.signal }); }
-  catch (e) {
-    if (ctx.signal.aborted) throw e;
-    throw new Error(`${service} could not be reached (${/** @type {Error} */ (e).message}).`);
+  for (let wait = steadily.first; ; wait = Math.min(steadily.most, wait * 2)) {
+    try {
+      res = await fetch(url, { ...init, signal: ctx.networkTimeoutMs ? AbortSignal.any([ctx.signal, AbortSignal.timeout(ctx.networkTimeoutMs)]) : ctx.signal });
+      if (!PASSING.has(res.status) || Date.now() + wait > until) break;
+      await res.body?.cancel();
+    } catch (e) {
+      if (init.method === 'POST' && !new Headers(init.headers).has('idempotency-key')) throw Object.assign(new Error(`${service} connection ended before its outcome was confirmed.`), { mediaUncertain: true });
+      if (ctx.signal.aborted) throw e;
+      if (Date.now() + wait > until) throw new Error(`${service} could not be reached (${/** @type {Error} */ (e).message}).`);
+    }
+    await sleep(wait, ctx.signal);
   }
-  if (res.ok) return res;
+  if (res.ok || how.keep?.includes(res.status)) return res;
+  const error = await failure(service, res, ctx);
+  if (init.method === 'POST' && res.status >= 500 && !new Headers(init.headers).has('idempotency-key')) Object.assign(error, { mediaUncertain: true });
+  throw error;
+}
+
+/**
+ * The error a service's refusal (`res`, not ok) is, as `call` says it: its key or plan, its balance, or what it said.
+ * @param {string} service @param {Response} res @param {RunContext} ctx @returns {Promise<Error>}
+ */
+export async function failure(service, res, ctx) {
   const text = await res.text().catch(() => '');
-  if (KEY_LIMIT.test(text)) throw keyLimit(service);
-  if (outOfBalance(res.status, text)) throw noBalance(service);
+  if (KEY_LIMIT.test(text)) return keyLimit(service);
+  if (outOfBalance(res.status, text)) return noBalance(service);
   /* with no key (a keyless provider) there is nothing to blank out */
   const reason = (ctx.key ? reasonOf(text).split(ctx.key).join('•••') : reasonOf(text)).slice(0, 500);
-  if (PAID_PLAN.test(text)) throw new Error(`${service} needs a paid plan for this (${res.status})${reason ? `: ${reason}` : ''}`);
-  if (res.status === 401 || res.status === 403) throw new Error(`${service} did not accept your key (${res.status}). Check it in Studio: Settings (the OpenFilm logo at the top left) → Services.`);
-  throw new Error(`${service} answered ${res.status}${reason ? `: ${reason}` : ''}`);
+  if (PAID_PLAN.test(text)) return new Error(`${service} needs a paid plan for this (${res.status})${reason ? `: ${reason}` : ''}`);
+  if (res.status === 401 || res.status === 403) return new Error(`${service} did not accept your key (${res.status}). Check it in Studio: Settings (the OpenFilm logo at the top left) → Services.`);
+  if (res.status >= 500 && !reason) return new Error(`${service} is not answering right now (${res.status}). Try again in a moment.`);
+  return new Error(`${service} answered ${res.status}${reason ? `: ${reason}` : ''}`);
 }
 
 /**
@@ -77,10 +104,12 @@ export const keyLimit = (service) => Object.assign(new Error(`${service}: this k
 /** The human part of a service's error body (each service nests it its own way). */
 function reasonOf(/** @type {string} */ text) {
   let body;
+  /* a web page (a gateway's error page): only its title says anything */
+  if (/^\s*</.test(text)) return (text.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1] ?? '').replace(/\s+/g, ' ').trim();
   try { body = JSON.parse(text); } catch { return text.trim(); }
   const detail = body?.error?.message ?? body?.detail?.message ?? body?.detail ?? body?.message ?? body?.error;
   if (Array.isArray(detail)) return detail.map((d) => d?.msg ?? d?.message ?? JSON.stringify(d)).join('; ');
-  return typeof detail === 'string' ? detail : JSON.stringify(body);
+  return typeof detail === 'string' ? detail : body && typeof body === 'object' && !Object.keys(body).length ? '' : JSON.stringify(body);
 }
 
 /**
@@ -120,10 +149,26 @@ export function needed(/** @type {Record<string, unknown>} */ args, /** @type {s
   return value;
 }
 
+/**
+ * A result's name can use every script, combining marks, emoji, spaces and punctuation that file systems allow.
+ * Leave room for the extension and numbered results, and reject Windows device names even on macOS or Linux.
+ * @param {unknown} name @returns {name is string}
+ */
+export function isOutputName(name) {
+  return typeof name === 'string' && name.length <= 120 && Buffer.byteLength(name, 'utf8') <= 240 && portableName(name);
+}
+
+/** A single file name, without any size limit (the completed name includes its extension). @param {string} name */
+function portableName(name) {
+  return name.length > 0 && name === name.trim() && !name.startsWith('.') && !name.endsWith('.')
+    && !/[/\\:*?"<>|\u0000-\u001f\u007f]/.test(name)
+    && !/^(?:con|conin\$|conout\$|prn|aux|nul|com[1-9¹²³]|lpt[1-9¹²³])(?:\.|$)/i.test(name);
+}
+
 /** Where a result lands: `assets/<dir>/<out>.<ext>`; `--out` is a name, not a path. */
 export function landing(/** @type {string} */ dir, /** @type {unknown} */ out, /** @type {string} */ ext) {
   const name = text(out).replace(/\.[a-z0-9]{2,4}$/i, '');
-  if (!name || name === '.' || name === '..' || /[/\\\u0000-\u001f]/.test(name)) throw new Error('--out is a name (no folders, no extension), e.g. --out intro.');
+  if (!portableName(name) || Buffer.byteLength(`${name}.${ext}`, 'utf8') > 255) throw new Error('--out is a name (no folders, no extension), e.g. --out intro.');
   return `assets/${dir}/${name}.${ext}`;
 }
 

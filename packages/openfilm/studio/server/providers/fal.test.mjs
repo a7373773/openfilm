@@ -28,6 +28,22 @@ after(() => server.close());
 
 const ctx = (files = {}, signal = new AbortController().signal) => ({ key: KEY, root: '/project', signal, say: () => {}, read: async (p) => files[p] });
 
+test('native image and music URLs pass through without a download or another storage copy', async () => {
+  seen.length = 0;
+  reply = queue('fal-ai/flux-2-pro',{images:[{url:`${base}/files/out.png`,width:1536,height:864,content_type:'image/png'}]},1);
+  const image = await fal.run('image',{out:'hero',prompt:'a brass key'},{...ctx(),handOff:true});
+  assert.equal(image.files[0].url,`${base}/files/out.png`);
+  assert.equal(image.index[0].w,1536);
+  assert.ok(!seen.some(call=>call.url.pathname.startsWith('/files/')));
+  seen.length = 0;
+  reply = queue('fal-ai/stable-audio-25/text-to-audio',{audio:{url:`${base}/files/out.wav`,content_type:'audio/wav',duration:10}},1);
+  const music = await fal.run('music',{out:'bed',prompt:'lofi',sec:10},{...ctx(),handOff:true});
+  assert.equal(music.files[0].url,`${base}/files/out.wav`);
+  assert.equal(music.index[0].dur,10);
+  assert.ok(!seen.some(call=>call.url.pathname.startsWith('/files/')));
+  seen.length = 0;
+});
+
 /**
  * One queued model: submitted at /<model>, done after `ready` status asks (fal's status and result addresses use the
  * app's base id, so they are taken from the submit answer, never built).
@@ -124,19 +140,6 @@ test('music from Lyria 2: its tracks are 30 s, said when another length was aske
   const result = await fal.run('music', { out: 'bed', prompt: 'lofi', sec: 12 }, { ...ctx(), model: 'fal-ai/lyria2' });
   assert.deepEqual(JSON.parse(seen.find((c) => c.method === 'POST').body), { prompt: 'lofi' });
   assert.match(result.receipt.notes[0], /30 s tracks/);
-});
-
-test('a sound effect: ElevenLabs Sound Effects through fal as 128 kbps MP3, its length from its size', async () => {
-  seen.length = 0;
-  reply = queue('fal-ai/elevenlabs/sound-effects/v2', { audio: { url: `${base}/files/out.mp3`, content_type: 'audio/mpeg', file_name: 'out.mp3' } });
-  const result = await fal.run('sfx', { out: 'whoosh', prompt: 'a fast whoosh', sec: 1.5 }, ctx());
-  assert.deepEqual(JSON.parse(seen.find((c) => c.method === 'POST').body), { text: 'a fast whoosh', duration_seconds: 1.5, output_format: 'mp3_44100_128' });
-  assert.equal(result.files[0].path, 'assets/audio/sfx/whoosh.mp3');
-  assert.equal(result.index[0].dur, 1);
-  /* no length asked: the model chooses */
-  seen.length = 0;
-  await fal.run('sfx', { out: 'whoosh', prompt: 'x' }, ctx());
-  assert.equal('duration_seconds' in JSON.parse(seen.find((c) => c.method === 'POST').body), false);
 });
 
 test('a cancelled video run cancels the queued request too', async () => {

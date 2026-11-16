@@ -3916,14 +3916,9 @@ export function ProjectView({ projectId, onProject, onLeave }: {
     const folder = loaded?.project.path;
     if (!folder) return t('timeline.editFail');
     const atMs = snapToFrame(timeRef.current);
-    const res = await fetch('/api/get', {
-      method: 'POST', headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        folder, verb: 'tts', via: access.via, ...(access.models[0] ? { model: access.models[0] } : {}),
-        args: { text, voice: voice.id, out: `vo-${Date.now().toString(36)}` },
-      }),
-    }).catch(() => null);
-    const body = await res?.json().catch(() => null) as { ok?: boolean; text?: string } | null;
+    const body = await api.make(folder,'tts',{text,voice:voice.id,out:`vo-${Date.now().toString(36)}`},
+      {via:access.via,...(access.models[0]?{model:access.models[0]}:{}),recoveryScope:'library-voice'})
+      .then(text=>({ok:true,text}),error=>({ok:false,text:error instanceof Error?error.message:t('timeline.editFail')}));
     if (!body?.ok) return body?.text ?? t('timeline.editFail');
     let made: { src?: string; dur?: number } | null = null;
     try { made = JSON.parse(body.text ?? '') as { src?: string; dur?: number }; } catch { made = null; }

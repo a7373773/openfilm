@@ -1,5 +1,13 @@
 # openfilm
 
+## 0.3.3
+
+### Patch Changes
+
+- Keep paid media requests recoverable across timeouts, interruptions and restarts. Retry the original task, resume partial downloads with size and SHA-256 verification, and save completed files atomically.
+- Preserve request identity across canvas retries, unfinished batches and voice-library generation. A new take starts only after delivery or an explicit fresh request.
+- Stream reference uploads and generated files instead of carrying large base64 responses. Support filenames with spaces and multilingual characters.
+
 ## 0.3.2
 
 ### Patch Changes
