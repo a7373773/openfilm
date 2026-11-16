@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "aspect": {
+    "target": [
+      1920,
+      1080
+    ],
+    "accept_rotation": [
+      0
+    ],
+    "fit": "cover_crop",
+    "rule": "主题确定后先定画幅：素材为横屏就全片横屏，任何 90/270 度旋转或非 16:9 素材直接剔除，禁止拉伸"
+  },
+  "quality": {
+    "min_sharp": 6000,
+    "max_bright": 235,
+    "min_bright": 65,
+    "rule": "锐度低于阈值、亮度高于 235（白到发灰）或低于 65 的镜头不进候选池"
+  },
+  "dedupe": {
+    "cluster_threshold": 0.5,
+    "one_per_cluster": true,
+    "max_same_cluster": 2,
+    "min_gap_s": 10,
+    "rule": "同场景镜头按画面直方图自动聚类，每个聚类只留评分最高的一条；确需第二条必须是另一个景别且间隔 10 秒以上"
+  },
+  "beat": {
+    "bpm": 96,
+    "beat_unit_s": 0.625,
+    "transition_s": 0.625
+  },
+  "transitions": {
+    "allowed": [
+      "fade",
+      "dissolve",
+      "smoothleft",
+      "smoothright",
+      "smoothup",
+      "fadewhite",
+      "circleopen"
+    ],
+    "default": "fade",
+    "directional_ratio_max": 0.35,
+    "rule": "方向性转场跟着镜头运动方向走；占比不超过 1/3，其余用 0.6 秒交叉淡化"
+  },
+  "grade": {
+    "saturation_max": 1.1,
+    "vibrance_max": 0.16,
+    "contrast_max": 1.06,
+    "highlight_warm_max": 0.05,
+    "shadow_teal_max": 0.02,
+    "lut": false,
+    "rule": "只做曝光对齐 + 高光滚降 + 轻微暖度推进；饱和度/自然饱和度/对比度受限，禁止 LUT 与重度风格化，保持真实"
+  },
+  "music": {
+    "genres": [
+      "light",
+      "acoustic",
+      "piano",
+      "folk-pop"
+    ],
+    "bpm_range": [
+      88,
+      112
+    ],
+    "rms_swing_max_db": 7,
+    "min_len_ratio": 1.05,
+    "rule": "以轻音乐为主、愉快轻松；BPM 88-112、能量平稳不突兀、时长覆盖成片；与场景情绪匹配（田园自然=木吉他/尤克里里/马林巴）",
+    "blacklist": {
+      "Wallpaper.mp3": "合成器+鼓组，偏电子，不符合轻音乐"
+    }
+  },
+  "duration": {
+    "min_s": 120,
+    "max_s": 210
+  }
+}
