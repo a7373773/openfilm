@@ -1,0 +1,33 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+YCbCr Matrix: TV.709
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,Microsoft YaHei,102,&H00FFFFFF,&H000000FF,&H12121212,&H96000000,-1,0,0,0,100,100,12,0,1,4,6,5,60,60,60,1
+Style: Sub,Microsoft YaHei,42,&H00FFFFFF,&H000000FF,&H12121212,&H96000000,0,0,0,0,100,100,8,0,1,3,4,5,60,60,60,1
+Style: Cap,Microsoft YaHei,52,&H00FFFFFF,&H000000FF,&H12121212,&H96000000,-1,0,0,0,100,100,10,0,1,3,4,7,120,60,96,1
+Style: End,Microsoft YaHei,66,&H00FFFFFF,&H000000FF,&H12121212,&H96000000,-1,0,0,0,100,100,10,0,1,4,5,5,60,60,60,1
+Style: Credit,Microsoft YaHei,30,&H00F0F0F0,&H000000FF,&H12121212,&H96000000,0,0,0,0,100,100,2,0,1,2,3,2,60,60,44,1
+Style: Glow,Microsoft YaHei,10,&H00000000,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,0,0,5,0,0,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:01.10,0:00:06.20,Title,,0,0,0,,{\an5\pos(960,452)\fad(900,900)\blur26\1c&H000000&\1a&H6E&\bord0\shad0\fs112\fsp0}中山 · 稻田采风
+Dialogue: 1,0:00:01.10,0:00:06.20,Title,,0,0,0,,{\an5\pos(960,452)\fad(900,900)}中山 · 稻田采风
+Dialogue: 0,0:00:02.00,0:00:06.20,Sub,,0,0,0,,{\an5\pos(960,568)\fad(900,900)\blur20\1c&H000000&\1a&H78&\bord0\shad0\fs46\fsp0}2026.11.14 晴 · 户外采风
+Dialogue: 1,0:00:02.00,0:00:06.20,Sub,,0,0,0,,{\an5\pos(960,568)\fad(900,900)}2026.11.14 晴 · 户外采风
+Dialogue: 0,0:00:22.32,0:00:25.72,Cap,,0,0,0,,{\an7\pos(120,884)\fad(600,600)\blur22\1c&H000000&\1a&H74&\bord0\shad0\fs56\fsp0}午后 · 抵达
+Dialogue: 1,0:00:22.32,0:00:25.72,Cap,,0,0,0,,{\an7\pos(120,884)\fad(600,600)}午后 · 抵达
+Dialogue: 0,0:00:46.08,0:00:49.48,Cap,,0,0,0,,{\an7\pos(120,884)\fad(600,600)\blur22\1c&H000000&\1a&H74&\bord0\shad0\fs56\fsp0}稻田 · 采风
+Dialogue: 1,0:00:46.08,0:00:49.48,Cap,,0,0,0,,{\an7\pos(120,884)\fad(600,600)}稻田 · 采风
+Dialogue: 0,0:02:19.82,0:02:23.22,Cap,,0,0,0,,{\an7\pos(120,884)\fad(600,600)\blur22\1c&H000000&\1a&H74&\bord0\shad0\fs56\fsp0}日落之前
+Dialogue: 1,0:02:19.82,0:02:23.22,Cap,,0,0,0,,{\an7\pos(120,884)\fad(600,600)}日落之前
+Dialogue: 0,0:02:48.88,0:02:55.28,End,,0,0,0,,{\an5\pos(960,512)\fad(1100,1100)\blur26\1c&H000000&\1a&H74&\bord0\shad0\fs72\fsp0}中山　2026.11.14
+Dialogue: 1,0:02:48.88,0:02:55.28,End,,0,0,0,,{\an5\pos(960,512)\fad(1100,1100)}中山　2026.11.14
+Dialogue: 0,0:02:49.47,0:02:55.28,Credit,,0,0,0,,{\an2\pos(960,1022)\fad(1100,1100)\blur18\1c&H000000&\1a&H80&\bord0\shad0\fs32\fsp0}音乐：Carefree — Kevin MacLeod (incompetech.com) · CC BY 4.0
+Dialogue: 1,0:02:49.47,0:02:55.28,Credit,,0,0,0,,{\an2\pos(960,1022)\fad(1100,1100)}音乐：Carefree — Kevin MacLeod (incompetech.com) · CC BY 4.0
