@@ -1,0 +1,2259 @@
+{
+ "C1824S03.mp4": {
+  "file": "C1824S03.mp4",
+  "dur": 2.5,
+  "section": "起步",
+  "usable_secs": 2.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1479.0,
+  "mean_fineratio": 0.099,
+  "mean_luma": 121.4,
+  "motion": 21.2,
+  "first": {
+   "sky": 0.045,
+   "green": 0.3647
+  },
+  "mid": {
+   "sky": 0.0533,
+   "green": 0.3999
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    2.5
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.802,
+  "grade": "C"
+ },
+ "C1825S03.mp4": {
+  "file": "C1825S03.mp4",
+  "dur": 6.0,
+  "section": "起步",
+  "usable_secs": 6.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 2359.5,
+  "mean_fineratio": 0.144,
+  "mean_luma": 131.5,
+  "motion": 11.2,
+  "first": {
+   "sky": 0.0916,
+   "green": 0.4091
+  },
+  "mid": {
+   "sky": 0.0733,
+   "green": 0.398
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    4.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.918,
+  "grade": "A"
+ },
+ "C1826S03.mp4": {
+  "file": "C1826S03.mp4",
+  "dur": 7.0,
+  "section": "起步",
+  "usable_secs": 7.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1847.3,
+  "mean_fineratio": 0.128,
+  "mean_luma": 122.7,
+  "motion": 21.3,
+  "first": {
+   "sky": 0.0648,
+   "green": 0.3242
+  },
+  "mid": {
+   "sky": 0.059,
+   "green": 0.314
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.0,
+    3.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.87,
+  "grade": "B"
+ },
+ "C1827S03.mp4": {
+  "file": "C1827S03.mp4",
+  "dur": 2.0,
+  "section": "起步",
+  "usable_secs": 2.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 2929.0,
+  "mean_fineratio": 0.177,
+  "mean_luma": 142.7,
+  "motion": 3.5,
+  "first": {
+   "sky": 0.0698,
+   "green": 0.3161
+  },
+  "mid": {
+   "sky": 0.0706,
+   "green": 0.315
+  },
+  "mask_runs": [],
+  "keep": [],
+  "keep_secs": 0.0,
+  "note": "重复镜头，与 C1828S03.mp4 同画面，建议用后者",
+  "dup_of": "C1828S03.mp4",
+  "grade": "-"
+ },
+ "C1828S03.mp4": {
+  "file": "C1828S03.mp4",
+  "dur": 4.0,
+  "section": "起步",
+  "usable_secs": 4.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1817.6,
+  "mean_fineratio": 0.148,
+  "mean_luma": 135.5,
+  "motion": 3.0,
+  "first": {
+   "sky": 0.011,
+   "green": 0.2797
+  },
+  "mid": {
+   "sky": 0.0115,
+   "green": 0.2754
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    4.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.895,
+  "grade": "A"
+ },
+ "C1829S03.mp4": {
+  "file": "C1829S03.mp4",
+  "dur": 3.0,
+  "section": "起步",
+  "usable_secs": 3.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 635.4,
+  "mean_fineratio": 0.067,
+  "mean_luma": 164.1,
+  "motion": 21.7,
+  "first": {
+   "sky": 0.0878,
+   "green": 0.2145
+  },
+  "mid": {
+   "sky": 0.0923,
+   "green": 0.2497
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    1.0,
+    3.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.526,
+  "grade": "C"
+ },
+ "C1833S03.mp4": {
+  "file": "C1833S03.mp4",
+  "dur": 2.0,
+  "section": "起步",
+  "usable_secs": 2.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1726.6,
+  "mean_fineratio": 0.21,
+  "mean_luma": 62.6,
+  "motion": 7.8,
+  "first": {
+   "sky": 0.0044,
+   "green": 0.4798
+  },
+  "mid": {
+   "sky": 0.0033,
+   "green": 0.4905
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.0,
+    2.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.889,
+  "grade": "A"
+ },
+ "C1834S03.mp4": {
+  "file": "C1834S03.mp4",
+  "dur": 4.0,
+  "section": "起步",
+  "usable_secs": 4.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 2966.2,
+  "mean_fineratio": 0.179,
+  "mean_luma": 144.8,
+  "motion": 22.5,
+  "first": {
+   "sky": 0.0142,
+   "green": 0.6413
+  },
+  "mid": {
+   "sky": 0.009,
+   "green": 0.5945
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.0,
+    3.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.92,
+  "grade": "A"
+ },
+ "C1836S03.mp4": {
+  "file": "C1836S03.mp4",
+  "dur": 4.0,
+  "section": "起步",
+  "usable_secs": 4.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 231.9,
+  "mean_fineratio": 0.076,
+  "mean_luma": 48.5,
+  "motion": 20.5,
+  "first": {
+   "sky": 0.0029,
+   "green": 0.2534
+  },
+  "mid": {
+   "sky": 0.0115,
+   "green": 0.2061
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.0,
+    2.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.374,
+  "grade": "C"
+ },
+ "C1837S03.mp4": {
+  "file": "C1837S03.mp4",
+  "dur": 4.0,
+  "section": "起步",
+  "usable_secs": 4.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 2590.5,
+  "mean_fineratio": 0.213,
+  "mean_luma": 89.4,
+  "motion": 8.5,
+  "first": {
+   "sky": 0.0226,
+   "green": 0.5074
+  },
+  "mid": {
+   "sky": 0.0085,
+   "green": 0.5122
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    4.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.928,
+  "grade": "A"
+ },
+ "C1838S03.mp4": {
+  "file": "C1838S03.mp4",
+  "dur": 2.5,
+  "section": "起步",
+  "usable_secs": 2.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1539.4,
+  "mean_fineratio": 0.146,
+  "mean_luma": 104.4,
+  "motion": 4.3,
+  "first": {
+   "sky": 0.0146,
+   "green": 0.7416
+  },
+  "mid": {
+   "sky": 0.0135,
+   "green": 0.7326
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    2.5
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.755,
+  "grade": "A"
+ },
+ "C1839S03.mp4": {
+  "file": "C1839S03.mp4",
+  "dur": 4.5,
+  "section": "起步",
+  "usable_secs": 4.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 512.8,
+  "mean_fineratio": 0.082,
+  "mean_luma": 66.8,
+  "motion": 12.5,
+  "first": {
+   "sky": 0.0034,
+   "green": 0.5051
+  },
+  "mid": {
+   "sky": 0.0412,
+   "green": 0.5046
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    2.5
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.604,
+  "grade": "C"
+ },
+ "C1840S03.mp4": {
+  "file": "C1840S03.mp4",
+  "dur": 3.0,
+  "section": "起步",
+  "usable_secs": 3.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 421.9,
+  "mean_fineratio": 0.096,
+  "mean_luma": 41.5,
+  "motion": 2.6,
+  "first": {
+   "sky": 0.001,
+   "green": 0.2673
+  },
+  "mid": {
+   "sky": 0.0005,
+   "green": 0.2725
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    1.0,
+    3.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.465,
+  "grade": "C"
+ },
+ "C1841S03.mp4": {
+  "file": "C1841S03.mp4",
+  "dur": 3.5,
+  "section": "起步",
+  "usable_secs": 3.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1646.9,
+  "mean_fineratio": 0.16,
+  "mean_luma": 61.1,
+  "motion": 2.8,
+  "first": {
+   "sky": 0.0012,
+   "green": 0.5529
+  },
+  "mid": {
+   "sky": 0.0008,
+   "green": 0.5816
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.0,
+    3.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.819,
+  "grade": "A"
+ },
+ "C1842S03.mp4": {
+  "file": "C1842S03.mp4",
+  "dur": 4.5,
+  "section": "起步",
+  "usable_secs": 4.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 566.5,
+  "mean_fineratio": 0.13,
+  "mean_luma": 52.3,
+  "motion": 10.4,
+  "first": {
+   "sky": 0.0706,
+   "green": 0.3426
+  },
+  "mid": {
+   "sky": 0.0515,
+   "green": 0.4412
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    2.0,
+    4.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.571,
+  "grade": "C"
+ },
+ "C1843S03.mp4": {
+  "file": "C1843S03.mp4",
+  "dur": 11.0,
+  "section": "起步",
+  "usable_secs": 11.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 533.4,
+  "mean_fineratio": 0.118,
+  "mean_luma": 47.2,
+  "motion": 8.5,
+  "first": {
+   "sky": 0.0013,
+   "green": 0.4324
+  },
+  "mid": {
+   "sky": 0.0043,
+   "green": 0.3719
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    9.0,
+    11.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.669,
+  "grade": "C"
+ },
+ "C1844S03.mp4": {
+  "file": "C1844S03.mp4",
+  "dur": 4.5,
+  "section": "起步",
+  "usable_secs": 4.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 2427.4,
+  "mean_fineratio": 0.13,
+  "mean_luma": 144.0,
+  "motion": 23.1,
+  "first": {
+   "sky": 0.0596,
+   "green": 0.4889
+  },
+  "mid": {
+   "sky": 0.0664,
+   "green": 0.4836
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    4.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.86,
+  "grade": "A"
+ },
+ "C1845S03.mp4": {
+  "file": "C1845S03.mp4",
+  "dur": 14.5,
+  "section": "起步",
+  "usable_secs": 14.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 828.8,
+  "mean_fineratio": 0.097,
+  "mean_luma": 127.6,
+  "motion": 40.3,
+  "first": {
+   "sky": 0.0784,
+   "green": 0.3902
+  },
+  "mid": {
+   "sky": 0.063,
+   "green": 0.3273
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    7.5,
+    11.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.686,
+  "grade": "C"
+ },
+ "C1846S03.mp4": {
+  "file": "C1846S03.mp4",
+  "dur": 9.5,
+  "section": "林间",
+  "usable_secs": 9.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 3013.4,
+  "mean_fineratio": 0.212,
+  "mean_luma": 85.3,
+  "motion": 9.5,
+  "first": {
+   "sky": 0.0089,
+   "green": 0.53
+  },
+  "mid": {
+   "sky": 0.0034,
+   "green": 0.4879
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    5.0,
+    9.0
+   ]
+  ],
+  "keep_secs": 4.0,
+  "note": "",
+  "q": 0.926,
+  "grade": "A"
+ },
+ "C1847S03.mp4": {
+  "file": "C1847S03.mp4",
+  "dur": 2.5,
+  "section": "林间",
+  "usable_secs": 2.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 241.4,
+  "mean_fineratio": 0.045,
+  "mean_luma": 83.5,
+  "motion": 16.2,
+  "first": {
+   "sky": 0.0059,
+   "green": 0.7426
+  },
+  "mid": {
+   "sky": 0.0044,
+   "green": 0.6653
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    2.5
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.426,
+  "grade": "C"
+ },
+ "C1848S03.mp4": {
+  "file": "C1848S03.mp4",
+  "dur": 11.0,
+  "section": "林间",
+  "usable_secs": 10.0,
+  "usable_ratio": 0.909,
+  "mean_sharp": 827.4,
+  "mean_fineratio": 0.169,
+  "mean_luma": 25.2,
+  "motion": 6.7,
+  "first": {
+   "sky": 0.0028,
+   "green": 0.1221
+  },
+  "mid": {
+   "sky": 0.0026,
+   "green": 0.1128
+  },
+  "mask_runs": [
+   [
+    0.0,
+    1.0,
+    "mid",
+    158.1,
+    0.055
+   ]
+  ],
+  "keep": [
+   [
+    8.5,
+    11.0
+   ]
+  ],
+  "keep_secs": 2.5,
+  "note": "",
+  "q": 0.644,
+  "grade": "B"
+ },
+ "C1849S03.mp4": {
+  "file": "C1849S03.mp4",
+  "dur": 12.0,
+  "section": "林间",
+  "usable_secs": 12.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 853.5,
+  "mean_fineratio": 0.162,
+  "mean_luma": 42.8,
+  "motion": 10.0,
+  "first": {
+   "sky": 0.0028,
+   "green": 0.1487
+  },
+  "mid": {
+   "sky": 0.0541,
+   "green": 0.1168
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    2.5,
+    6.5
+   ]
+  ],
+  "keep_secs": 4.0,
+  "note": "",
+  "q": 0.698,
+  "grade": "B"
+ },
+ "C1850S03.mp4": {
+  "file": "C1850S03.mp4",
+  "dur": 6.0,
+  "section": "林间",
+  "usable_secs": 6.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 3876.8,
+  "mean_fineratio": 0.209,
+  "mean_luma": 69.7,
+  "motion": 8.2,
+  "first": {
+   "sky": 0.0012,
+   "green": 0.5858
+  },
+  "mid": {
+   "sky": 0.0013,
+   "green": 0.5686
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    4.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.904,
+  "grade": "A"
+ },
+ "C1851S03.mp4": {
+  "file": "C1851S03.mp4",
+  "dur": 6.5,
+  "section": "林间",
+  "usable_secs": 6.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1245.1,
+  "mean_fineratio": 0.142,
+  "mean_luma": 51.1,
+  "motion": 17.2,
+  "first": {
+   "sky": 0.021,
+   "green": 0.4266
+  },
+  "mid": {
+   "sky": 0.0203,
+   "green": 0.3491
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    4.0,
+    6.5
+   ]
+  ],
+  "keep_secs": 2.5,
+  "note": "",
+  "q": 0.826,
+  "grade": "B"
+ },
+ "C1852S03.mp4": {
+  "file": "C1852S03.mp4",
+  "dur": 6.5,
+  "section": "林间",
+  "usable_secs": 6.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1716.4,
+  "mean_fineratio": 0.156,
+  "mean_luma": 54.9,
+  "motion": 6.5,
+  "first": {
+   "sky": 0.0035,
+   "green": 0.3808
+  },
+  "mid": {
+   "sky": 0.0057,
+   "green": 0.4016
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    2.5,
+    6.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.839,
+  "grade": "A"
+ },
+ "C1853S03.mp4": {
+  "file": "C1853S03.mp4",
+  "dur": 4.5,
+  "section": "林间",
+  "usable_secs": 4.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1045.4,
+  "mean_fineratio": 0.129,
+  "mean_luma": 48.6,
+  "motion": 9.2,
+  "first": {
+   "sky": 0.0062,
+   "green": 0.5163
+  },
+  "mid": {
+   "sky": 0.002,
+   "green": 0.5506
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    1.0,
+    4.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.671,
+  "grade": "B"
+ },
+ "C1854S03.mp4": {
+  "file": "C1854S03.mp4",
+  "dur": 3.0,
+  "section": "林间",
+  "usable_secs": 3.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1390.4,
+  "mean_fineratio": 0.173,
+  "mean_luma": 69.5,
+  "motion": 14.0,
+  "first": {
+   "sky": 0.0385,
+   "green": 0.0797
+  },
+  "mid": {
+   "sky": 0.0036,
+   "green": 0.094
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    1.0,
+    3.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.84,
+  "grade": "B"
+ },
+ "C1855S03.mp4": {
+  "file": "C1855S03.mp4",
+  "dur": 2.0,
+  "section": "林间",
+  "usable_secs": 2.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 920.7,
+  "mean_fineratio": 0.152,
+  "mean_luma": 73.9,
+  "motion": 17.0,
+  "first": {
+   "sky": 0.0156,
+   "green": 0.0334
+  },
+  "mid": {
+   "sky": 0.0095,
+   "green": 0.0391
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.0,
+    2.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.655,
+  "grade": "B"
+ },
+ "C1856S03.mp4": {
+  "file": "C1856S03.mp4",
+  "dur": 7.5,
+  "section": "林间",
+  "usable_secs": 7.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1527.2,
+  "mean_fineratio": 0.165,
+  "mean_luma": 60.1,
+  "motion": 17.9,
+  "first": {
+   "sky": 0.0017,
+   "green": 0.0692
+  },
+  "mid": {
+   "sky": 0.0111,
+   "green": 0.2925
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    4.0,
+    7.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.853,
+  "grade": "A"
+ },
+ "C1857S03.mp4": {
+  "file": "C1857S03.mp4",
+  "dur": 7.5,
+  "section": "林间",
+  "usable_secs": 7.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 3120.2,
+  "mean_fineratio": 0.22,
+  "mean_luma": 102.6,
+  "motion": 7.1,
+  "first": {
+   "sky": 0.0036,
+   "green": 0.6621
+  },
+  "mid": {
+   "sky": 0.0149,
+   "green": 0.5975
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    3.0,
+    6.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.944,
+  "grade": "A"
+ },
+ "C1858S03.mp4": {
+  "file": "C1858S03.mp4",
+  "dur": 9.0,
+  "section": "林间",
+  "usable_secs": 9.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 840.3,
+  "mean_fineratio": 0.123,
+  "mean_luma": 50.8,
+  "motion": 16.4,
+  "first": {
+   "sky": 0.068,
+   "green": 0.334
+  },
+  "mid": {
+   "sky": 0.0069,
+   "green": 0.4933
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.0,
+    4.0
+   ]
+  ],
+  "keep_secs": 4.0,
+  "note": "",
+  "q": 0.654,
+  "grade": "B"
+ },
+ "C1859S03.mp4": {
+  "file": "C1859S03.mp4",
+  "dur": 6.0,
+  "section": "林间",
+  "usable_secs": 6.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 2105.7,
+  "mean_fineratio": 0.119,
+  "mean_luma": 80.2,
+  "motion": 20.4,
+  "first": {
+   "sky": 0.0218,
+   "green": 0.6
+  },
+  "mid": {
+   "sky": 0.0327,
+   "green": 0.606
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    2.5,
+    6.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.846,
+  "grade": "B"
+ },
+ "C1860S03.mp4": {
+  "file": "C1860S03.mp4",
+  "dur": 6.0,
+  "section": "林间",
+  "usable_secs": 6.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 805.2,
+  "mean_fineratio": 0.102,
+  "mean_luma": 202.1,
+  "motion": 22.2,
+  "first": {
+   "sky": 0.069,
+   "green": 0.1952
+  },
+  "mid": {
+   "sky": 0.072,
+   "green": 0.351
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    3.0,
+    6.0
+   ]
+  ],
+  "keep_secs": 3.0,
+  "note": "",
+  "q": 0.708,
+  "grade": "B"
+ },
+ "C1861S03.mp4": {
+  "file": "C1861S03.mp4",
+  "dur": 5.5,
+  "section": "爬升",
+  "usable_secs": 5.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 3121.7,
+  "mean_fineratio": 0.139,
+  "mean_luma": 158.0,
+  "motion": 13.2,
+  "first": {
+   "sky": 0.0698,
+   "green": 0.4887
+  },
+  "mid": {
+   "sky": 0.0511,
+   "green": 0.4982
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    4.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.892,
+  "grade": "A"
+ },
+ "C1862S03.mp4": {
+  "file": "C1862S03.mp4",
+  "dur": 7.0,
+  "section": "爬升",
+  "usable_secs": 7.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 2503.3,
+  "mean_fineratio": 0.144,
+  "mean_luma": 160.1,
+  "motion": 42.6,
+  "first": {
+   "sky": 0.1639,
+   "green": 0.2133
+  },
+  "mid": {
+   "sky": 0.1393,
+   "green": 0.272
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    3.5,
+    7.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.83,
+  "grade": "A"
+ },
+ "C1863S03.mp4": {
+  "file": "C1863S03.mp4",
+  "dur": 8.0,
+  "section": "爬升",
+  "usable_secs": 8.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 2825.0,
+  "mean_fineratio": 0.168,
+  "mean_luma": 115.9,
+  "motion": 28.5,
+  "first": {
+   "sky": 0.0281,
+   "green": 0.525
+  },
+  "mid": {
+   "sky": 0.0244,
+   "green": 0.5187
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    4.0,
+    7.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.939,
+  "grade": "A"
+ },
+ "C1864S03.mp4": {
+  "file": "C1864S03.mp4",
+  "dur": 11.5,
+  "section": "爬升",
+  "usable_secs": 11.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 2222.8,
+  "mean_fineratio": 0.168,
+  "mean_luma": 84.4,
+  "motion": 8.6,
+  "first": {
+   "sky": 0.0045,
+   "green": 0.7638
+  },
+  "mid": {
+   "sky": 0.0127,
+   "green": 0.7836
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    7.0,
+    11.5
+   ]
+  ],
+  "keep_secs": 4.5,
+  "note": "",
+  "q": 0.891,
+  "grade": "A"
+ },
+ "C1865S03.mp4": {
+  "file": "C1865S03.mp4",
+  "dur": 6.5,
+  "section": "爬升",
+  "usable_secs": 5.5,
+  "usable_ratio": 0.846,
+  "mean_sharp": 468.5,
+  "mean_fineratio": 0.071,
+  "mean_luma": 100.0,
+  "motion": 26.1,
+  "first": {
+   "sky": 0.0088,
+   "green": 0.6892
+  },
+  "mid": {
+   "sky": 0.0498,
+   "green": 0.7203
+  },
+  "mask_runs": [
+   [
+    0.0,
+    1.0,
+    "mid",
+    26.9,
+    0.05
+   ]
+  ],
+  "keep": [
+   [
+    4.5,
+    6.5
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.6,
+  "grade": "C"
+ },
+ "C1866S03.mp4": {
+  "file": "C1866S03.mp4",
+  "dur": 18.0,
+  "section": "爬升",
+  "usable_secs": 18.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 2069.6,
+  "mean_fineratio": 0.132,
+  "mean_luma": 111.4,
+  "motion": 20.1,
+  "first": {
+   "sky": 0.0091,
+   "green": 0.6831
+  },
+  "mid": {
+   "sky": 0.021,
+   "green": 0.5731
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    14.0,
+    18.0
+   ]
+  ],
+  "keep_secs": 4.0,
+  "note": "",
+  "q": 0.921,
+  "grade": "A"
+ },
+ "C1867S03.mp4": {
+  "file": "C1867S03.mp4",
+  "dur": 4.5,
+  "section": "爬升",
+  "usable_secs": 4.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 519.8,
+  "mean_fineratio": 0.067,
+  "mean_luma": 73.7,
+  "motion": 27.1,
+  "first": {
+   "sky": 0.0555,
+   "green": 0.6754
+  },
+  "mid": {
+   "sky": 0.1141,
+   "green": 0.6343
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    2.5,
+    4.5
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.498,
+  "grade": "C"
+ },
+ "C1868S03.mp4": {
+  "file": "C1868S03.mp4",
+  "dur": 6.0,
+  "section": "爬升",
+  "usable_secs": 6.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 577.6,
+  "mean_fineratio": 0.093,
+  "mean_luma": 45.6,
+  "motion": 6.5,
+  "first": {
+   "sky": 0.0016,
+   "green": 0.3979
+  },
+  "mid": {
+   "sky": 0.0048,
+   "green": 0.3801
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    4.0,
+    6.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.503,
+  "grade": "C"
+ },
+ "C1869S03.mp4": {
+  "file": "C1869S03.mp4",
+  "dur": 8.5,
+  "section": "爬升",
+  "usable_secs": 8.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 2566.3,
+  "mean_fineratio": 0.151,
+  "mean_luma": 97.7,
+  "motion": 23.9,
+  "first": {
+   "sky": 0.0329,
+   "green": 0.3192
+  },
+  "mid": {
+   "sky": 0.0546,
+   "green": 0.3878
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    4.0,
+    7.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.88,
+  "grade": "A"
+ },
+ "C1870S03.mp4": {
+  "file": "C1870S03.mp4",
+  "dur": 4.0,
+  "section": "爬升",
+  "usable_secs": 4.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 3105.0,
+  "mean_fineratio": 0.194,
+  "mean_luma": 96.0,
+  "motion": 6.6,
+  "first": {
+   "sky": 0.0072,
+   "green": 0.7893
+  },
+  "mid": {
+   "sky": 0.0049,
+   "green": 0.7866
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    4.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.922,
+  "grade": "A"
+ },
+ "C1871S03.mp4": {
+  "file": "C1871S03.mp4",
+  "dur": 3.0,
+  "section": "爬升",
+  "usable_secs": 3.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 5723.2,
+  "mean_fineratio": 0.189,
+  "mean_luma": 99.1,
+  "motion": 6.0,
+  "first": {
+   "sky": 0.0267,
+   "green": 0.3677
+  },
+  "mid": {
+   "sky": 0.0213,
+   "green": 0.37
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    1.0,
+    3.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.914,
+  "grade": "A"
+ },
+ "C1872S03.mp4": {
+  "file": "C1872S03.mp4",
+  "dur": 7.5,
+  "section": "爬升",
+  "usable_secs": 7.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 3234.9,
+  "mean_fineratio": 0.167,
+  "mean_luma": 132.2,
+  "motion": 15.1,
+  "first": {
+   "sky": 0.0057,
+   "green": 0.4693
+  },
+  "mid": {
+   "sky": 0.0063,
+   "green": 0.4401
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.0,
+    3.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.94,
+  "grade": "A"
+ },
+ "C1873S03.mp4": {
+  "file": "C1873S03.mp4",
+  "dur": 5.0,
+  "section": "爬升",
+  "usable_secs": 5.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1287.7,
+  "mean_fineratio": 0.21,
+  "mean_luma": 223.1,
+  "motion": 2.3,
+  "first": {
+   "sky": 0.0507,
+   "green": 0.2575
+  },
+  "mid": {
+   "sky": 0.0429,
+   "green": 0.2496
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    4.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.729,
+  "grade": "B"
+ },
+ "C1874S03.mp4": {
+  "file": "C1874S03.mp4",
+  "dur": 3.5,
+  "section": "爬升",
+  "usable_secs": 3.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 994.5,
+  "mean_fineratio": 0.179,
+  "mean_luma": 210.4,
+  "motion": 13.3,
+  "first": {
+   "sky": 0.2483,
+   "green": 0.3808
+  },
+  "mid": {
+   "sky": 0.2323,
+   "green": 0.3706
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    3.5
+   ]
+  ],
+  "keep_secs": 3.0,
+  "note": "",
+  "q": 0.738,
+  "grade": "B"
+ },
+ "C1875S03.mp4": {
+  "file": "C1875S03.mp4",
+  "dur": 8.0,
+  "section": "爬升",
+  "usable_secs": 8.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1363.1,
+  "mean_fineratio": 0.212,
+  "mean_luma": 209.8,
+  "motion": 3.0,
+  "first": {
+   "sky": 0.3018,
+   "green": 0.4148
+  },
+  "mid": {
+   "sky": 0.2854,
+   "green": 0.3976
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.0,
+    3.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.784,
+  "grade": "B"
+ },
+ "C1877S03.mp4": {
+  "file": "C1877S03.mp4",
+  "dur": 19.0,
+  "section": "开阔",
+  "usable_secs": 19.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1857.3,
+  "mean_fineratio": 0.174,
+  "mean_luma": 118.2,
+  "motion": 9.7,
+  "first": {
+   "sky": 0.1326,
+   "green": 0.6078
+  },
+  "mid": {
+   "sky": 0.0701,
+   "green": 0.6613
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    15.0,
+    19.0
+   ]
+  ],
+  "keep_secs": 4.0,
+  "note": "",
+  "q": 0.954,
+  "grade": "A"
+ },
+ "C1878S03.mp4": {
+  "file": "C1878S03.mp4",
+  "dur": 8.5,
+  "section": "开阔",
+  "usable_secs": 8.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1806.7,
+  "mean_fineratio": 0.233,
+  "mean_luma": 146.1,
+  "motion": 4.8,
+  "first": {
+   "sky": 0.0048,
+   "green": 0.6621
+  },
+  "mid": {
+   "sky": 0.0052,
+   "green": 0.5936
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.0,
+    3.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.965,
+  "grade": "A"
+ },
+ "C1879S03.mp4": {
+  "file": "C1879S03.mp4",
+  "dur": 6.0,
+  "section": "开阔",
+  "usable_secs": 6.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 2574.5,
+  "mean_fineratio": 0.227,
+  "mean_luma": 127.3,
+  "motion": 9.0,
+  "first": {
+   "sky": 0.0122,
+   "green": 0.6621
+  },
+  "mid": {
+   "sky": 0.0113,
+   "green": 0.7108
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    1.0,
+    4.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.978,
+  "grade": "A"
+ },
+ "C1880S03.mp4": {
+  "file": "C1880S03.mp4",
+  "dur": 6.0,
+  "section": "开阔",
+  "usable_secs": 6.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1489.2,
+  "mean_fineratio": 0.212,
+  "mean_luma": 156.5,
+  "motion": 2.7,
+  "first": {
+   "sky": 0.013,
+   "green": 0.4624
+  },
+  "mid": {
+   "sky": 0.0121,
+   "green": 0.4917
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    2.0,
+    5.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.892,
+  "grade": "B"
+ },
+ "C1881S03.mp4": {
+  "file": "C1881S03.mp4",
+  "dur": 3.5,
+  "section": "开阔",
+  "usable_secs": 3.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 370.2,
+  "mean_fineratio": 0.184,
+  "mean_luma": 223.2,
+  "motion": 4.8,
+  "first": {
+   "sky": 0.4549,
+   "green": 0.0188
+  },
+  "mid": {
+   "sky": 0.4128,
+   "green": 0.0309
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    1.5,
+    3.5
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.479,
+  "grade": "C"
+ },
+ "C1882S03.mp4": {
+  "file": "C1882S03.mp4",
+  "dur": 6.5,
+  "section": "开阔",
+  "usable_secs": 6.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 832.8,
+  "mean_fineratio": 0.2,
+  "mean_luma": 152.4,
+  "motion": 2.7,
+  "first": {
+   "sky": 0.4127,
+   "green": 0.4416
+  },
+  "mid": {
+   "sky": 0.3464,
+   "green": 0.5028
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    3.0,
+    6.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.772,
+  "grade": "B"
+ },
+ "C1883S03.mp4": {
+  "file": "C1883S03.mp4",
+  "dur": 12.0,
+  "section": "开阔",
+  "usable_secs": 3.0,
+  "usable_ratio": 0.25,
+  "mean_sharp": 165.3,
+  "mean_fineratio": 0.138,
+  "mean_luma": 204.1,
+  "motion": 4.7,
+  "first": {
+   "sky": 0.1084,
+   "green": 0.1193
+  },
+  "mid": {
+   "sky": 0.2628,
+   "green": 0.0675
+  },
+  "mask_runs": [
+   [
+    3.0,
+    12.0,
+    "high",
+    76.5,
+    0.133
+   ]
+  ],
+  "keep": [
+   [
+    0.0,
+    2.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.486,
+  "grade": "C"
+ },
+ "C1884S03.mp4": {
+  "file": "C1884S03.mp4",
+  "dur": 6.5,
+  "section": "开阔",
+  "usable_secs": 6.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1232.9,
+  "mean_fineratio": 0.156,
+  "mean_luma": 153.3,
+  "motion": 4.8,
+  "first": {
+   "sky": 0.1654,
+   "green": 0.4545
+  },
+  "mid": {
+   "sky": 0.1617,
+   "green": 0.4591
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    3.0,
+    6.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.831,
+  "grade": "B"
+ },
+ "C1885S03.mp4": {
+  "file": "C1885S03.mp4",
+  "dur": 5.5,
+  "section": "开阔",
+  "usable_secs": 5.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 776.7,
+  "mean_fineratio": 0.177,
+  "mean_luma": 169.3,
+  "motion": 1.7,
+  "first": {
+   "sky": 0.0031,
+   "green": 0.4939
+  },
+  "mid": {
+   "sky": 0.0019,
+   "green": 0.4721
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    2.0,
+    5.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.691,
+  "grade": "B"
+ },
+ "C1886S03.mp4": {
+  "file": "C1886S03.mp4",
+  "dur": 5.0,
+  "section": "开阔",
+  "usable_secs": 5.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1192.5,
+  "mean_fineratio": 0.191,
+  "mean_luma": 143.8,
+  "motion": 7.6,
+  "first": {
+   "sky": 0.007,
+   "green": 0.644
+  },
+  "mid": {
+   "sky": 0.0061,
+   "green": 0.6073
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.0,
+    3.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.882,
+  "grade": "B"
+ },
+ "C1887S03.mp4": {
+  "file": "C1887S03.mp4",
+  "dur": 4.5,
+  "section": "开阔",
+  "usable_secs": 4.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 558.9,
+  "mean_fineratio": 0.15,
+  "mean_luma": 107.7,
+  "motion": 13.9,
+  "first": {
+   "sky": 0.4377,
+   "green": 0.2633
+  },
+  "mid": {
+   "sky": 0.3822,
+   "green": 0.3007
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    2.5,
+    4.5
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.638,
+  "grade": "C"
+ },
+ "C1889S03.mp4": {
+  "file": "C1889S03.mp4",
+  "dur": 6.0,
+  "section": "开阔",
+  "usable_secs": 6.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 836.3,
+  "mean_fineratio": 0.183,
+  "mean_luma": 135.1,
+  "motion": 4.4,
+  "first": {
+   "sky": 0.0006,
+   "green": 0.5706
+  },
+  "mid": {
+   "sky": 0.0014,
+   "green": 0.6097
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    4.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.76,
+  "grade": "B"
+ },
+ "C1890S03.mp4": {
+  "file": "C1890S03.mp4",
+  "dur": 7.5,
+  "section": "开阔",
+  "usable_secs": 7.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1444.1,
+  "mean_fineratio": 0.209,
+  "mean_luma": 91.9,
+  "motion": 4.5,
+  "first": {
+   "sky": 0.0025,
+   "green": 0.7182
+  },
+  "mid": {
+   "sky": 0.0024,
+   "green": 0.7233
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    3.0,
+    6.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.884,
+  "grade": "B"
+ },
+ "C1892S03.mp4": {
+  "file": "C1892S03.mp4",
+  "dur": 4.0,
+  "section": "登顶",
+  "usable_secs": 4.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 683.3,
+  "mean_fineratio": 0.159,
+  "mean_luma": 188.0,
+  "motion": 3.0,
+  "first": {
+   "sky": 0.0054,
+   "green": 0.0816
+  },
+  "mid": {
+   "sky": 0.0066,
+   "green": 0.0986
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    2.0,
+    4.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.591,
+  "grade": "C"
+ },
+ "C1893S03.mp4": {
+  "file": "C1893S03.mp4",
+  "dur": 3.0,
+  "section": "登顶",
+  "usable_secs": 3.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 536.1,
+  "mean_fineratio": 0.156,
+  "mean_luma": 193.3,
+  "motion": 2.6,
+  "first": {
+   "sky": 0.0249,
+   "green": 0.0717
+  },
+  "mid": {
+   "sky": 0.0261,
+   "green": 0.0831
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    1.0,
+    3.0
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.519,
+  "grade": "C"
+ },
+ "C1894S03.mp4": {
+  "file": "C1894S03.mp4",
+  "dur": 6.5,
+  "section": "登顶",
+  "usable_secs": 6.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 697.8,
+  "mean_fineratio": 0.164,
+  "mean_luma": 216.1,
+  "motion": 1.9,
+  "first": {
+   "sky": 0.1569,
+   "green": 0.0902
+  },
+  "mid": {
+   "sky": 0.1553,
+   "green": 0.1102
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    4.5,
+    6.5
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.557,
+  "grade": "C"
+ },
+ "C1895S03.mp4": {
+  "file": "C1895S03.mp4",
+  "dur": 5.5,
+  "section": "登顶",
+  "usable_secs": 5.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 876.7,
+  "mean_fineratio": 0.158,
+  "mean_luma": 185.1,
+  "motion": 2.3,
+  "first": {
+   "sky": 0.2097,
+   "green": 0.1696
+  },
+  "mid": {
+   "sky": 0.2084,
+   "green": 0.1678
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    3.5,
+    5.5
+   ]
+  ],
+  "keep_secs": 2.0,
+  "note": "",
+  "q": 0.62,
+  "grade": "B"
+ },
+ "C1896S03.mp4": {
+  "file": "C1896S03.mp4",
+  "dur": 7.5,
+  "section": "登顶",
+  "usable_secs": 7.5,
+  "usable_ratio": 1.0,
+  "mean_sharp": 961.9,
+  "mean_fineratio": 0.179,
+  "mean_luma": 167.4,
+  "motion": 4.4,
+  "first": {
+   "sky": 0.025,
+   "green": 0.2969
+  },
+  "mid": {
+   "sky": 0.0235,
+   "green": 0.2935
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    2.0,
+    5.5
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.737,
+  "grade": "B"
+ },
+ "C1897S03.mp4": {
+  "file": "C1897S03.mp4",
+  "dur": 17.0,
+  "section": "登顶",
+  "usable_secs": 11.5,
+  "usable_ratio": 0.676,
+  "mean_sharp": 388.7,
+  "mean_fineratio": 0.171,
+  "mean_luma": 187.9,
+  "motion": 8.5,
+  "first": {
+   "sky": 0.0013,
+   "green": 0.8593
+  },
+  "mid": {
+   "sky": 0.2465,
+   "green": 0.0871
+  },
+  "mask_runs": [
+   [
+    11.5,
+    17.0,
+    "high",
+    38.7,
+    0.123
+   ]
+  ],
+  "keep": [
+   [
+    0.0,
+    4.0
+   ]
+  ],
+  "keep_secs": 4.0,
+  "note": "",
+  "q": 0.851,
+  "grade": "C"
+ },
+ "C1898S03.mp4": {
+  "file": "C1898S03.mp4",
+  "dur": 17.0,
+  "section": "登顶",
+  "usable_secs": 17.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1139.0,
+  "mean_fineratio": 0.219,
+  "mean_luma": 165.3,
+  "motion": 5.7,
+  "first": {
+   "sky": 0.224,
+   "green": 0.491
+  },
+  "mid": {
+   "sky": 0.2302,
+   "green": 0.3745
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    4.5
+   ]
+  ],
+  "keep_secs": 4.0,
+  "note": "",
+  "q": 0.943,
+  "grade": "B"
+ },
+ "C1899S03.mp4": {
+  "file": "C1899S03.mp4",
+  "dur": 8.0,
+  "section": "登顶",
+  "usable_secs": 8.0,
+  "usable_ratio": 1.0,
+  "mean_sharp": 1058.4,
+  "mean_fineratio": 0.147,
+  "mean_luma": 137.3,
+  "motion": 6.6,
+  "first": {
+   "sky": 0.1045,
+   "green": 0.7804
+  },
+  "mid": {
+   "sky": 0.0285,
+   "green": 0.8048
+  },
+  "mask_runs": [],
+  "keep": [
+   [
+    0.5,
+    4.0
+   ]
+  ],
+  "keep_secs": 3.5,
+  "note": "",
+  "q": 0.79,
+  "grade": "B"
+ },
+ "C1905S03.mp4": {
+  "file": "C1905S03.mp4",
+  "dur": 13.0,
+  "section": "登顶",
+  "usable_secs": 0.0,
+  "usable_ratio": 0.0,
+  "mean_sharp": 190.8,
+  "mean_fineratio": 0.117,
+  "mean_luma": 101.0,
+  "motion": 4.8,
+  "first": {
+   "sky": 0.2565,
+   "green": 0.0
+  },
+  "mid": {
+   "sky": 0.21,
+   "green": 0.0
+  },
+  "mask_runs": [
+   [
+    0.0,
+    13.0,
+    "high",
+    192.6,
+    0.116
+   ]
+  ],
+  "keep": [],
+  "keep_secs": 0.0,
+  "note": "可用不足 2 秒（遮挡/糊），不入选",
+  "grade": "-"
+ },
+ "C1906S03.mp4": {
+  "file": "C1906S03.mp4",
+  "dur": 4.0,
+  "section": "登顶",
+  "usable_secs": 0.0,
+  "usable_ratio": 0.0,
+  "mean_sharp": 103.4,
+  "mean_fineratio": 0.08,
+  "mean_luma": 105.3,
+  "motion": 4.7,
+  "first": {
+   "sky": 0.1928,
+   "green": 0.0
+  },
+  "mid": {
+   "sky": 0.1678,
+   "green": 0.0
+  },
+  "mask_runs": [
+   [
+    0.0,
+    4.0,
+    "high",
+    63.5,
+    0.057
+   ]
+  ],
+  "keep": [],
+  "keep_secs": 0.0,
+  "note": "可用不足 2 秒（遮挡/糊），不入选",
+  "grade": "-"
+ },
+ "C1907S03.mp4": {
+  "file": "C1907S03.mp4",
+  "dur": 9.5,
+  "section": "登顶",
+  "usable_secs": 0.0,
+  "usable_ratio": 0.0,
+  "mean_sharp": 14.8,
+  "mean_fineratio": 0.09,
+  "mean_luma": 84.7,
+  "motion": 2.7,
+  "first": {
+   "sky": 0.1811,
+   "green": 0.0
+  },
+  "mid": {
+   "sky": 0.1555,
+   "green": 0.0
+  },
+  "mask_runs": [
+   [
+    0.0,
+    9.5,
+    "high",
+    14.9,
+    0.09
+   ]
+  ],
+  "keep": [],
+  "keep_secs": 0.0,
+  "note": "可用不足 2 秒（遮挡/糊），不入选",
+  "grade": "-"
+ },
+ "C1908S03.mp4": {
+  "file": "C1908S03.mp4",
+  "dur": 7.0,
+  "section": "登顶",
+  "usable_secs": 0.0,
+  "usable_ratio": 0.0,
+  "mean_sharp": 43.4,
+  "mean_fineratio": 0.109,
+  "mean_luma": 125.4,
+  "motion": 3.4,
+  "first": {
+   "sky": 0.1821,
+   "green": 0.0
+  },
+  "mid": {
+   "sky": 0.0943,
+   "green": 0.0
+  },
+  "mask_runs": [
+   [
+    0.0,
+    7.0,
+    "high",
+    41.0,
+    0.11
+   ]
+  ],
+  "keep": [],
+  "keep_secs": 0.0,
+  "note": "可用不足 2 秒（遮挡/糊），不入选",
+  "grade": "-"
+ },
+ "C1909S03.mp4": {
+  "file": "C1909S03.mp4",
+  "dur": 5.5,
+  "section": "登顶",
+  "usable_secs": 0.0,
+  "usable_ratio": 0.0,
+  "mean_sharp": 21.1,
+  "mean_fineratio": 0.102,
+  "mean_luma": 37.4,
+  "motion": 1.6,
+  "first": {
+   "sky": 0.0604,
+   "green": 0.0
+  },
+  "mid": {
+   "sky": 0.0449,
+   "green": 0.0
+  },
+  "mask_runs": [
+   [
+    0.0,
+    5.5,
+    "high",
+    17.5,
+    0.104
+   ]
+  ],
+  "keep": [],
+  "keep_secs": 0.0,
+  "note": "可用不足 2 秒（遮挡/糊），不入选",
+  "grade": "-"
+ }
+}

@@ -1,0 +1,62 @@
+[
+ {
+  "A": "C1827S03.mp4",
+  "B": "C1828S03.mp4",
+  "cover": 0.125,
+  "covA": 1.0,
+  "covB": 0.125,
+  "n_match_frames": 4,
+  "median_dhash": 4,
+  "median_hist_cos": 0.9399,
+  "monotonic": 1.0,
+  "best": {
+   "ia": 0,
+   "ib": 0,
+   "tA": 0.0,
+   "tB": 0.0,
+   "dh": 4,
+   "cos": 0.9399
+  },
+  "verdict": "touch"
+ },
+ {
+  "A": "C1905S03.mp4",
+  "B": "C1907S03.mp4",
+  "cover": 0.053,
+  "covA": 0.385,
+  "covB": 0.053,
+  "n_match_frames": 10,
+  "median_dhash": 7,
+  "median_hist_cos": 0.9276,
+  "monotonic": 1.0,
+  "best": {
+   "ia": 17,
+   "ib": 1,
+   "tA": 8.5,
+   "tB": 0.5,
+   "dh": 5,
+   "cos": 0.9276
+  },
+  "verdict": "touch"
+ },
+ {
+  "A": "C1906S03.mp4",
+  "B": "C1907S03.mp4",
+  "cover": 0.053,
+  "covA": 0.5,
+  "covB": 0.053,
+  "n_match_frames": 4,
+  "median_dhash": 7,
+  "median_hist_cos": 0.9345,
+  "monotonic": 1.0,
+  "best": {
+   "ia": 1,
+   "ib": 1,
+   "tA": 0.5,
+   "tB": 0.5,
+   "dh": 6,
+   "cos": 0.9319
+  },
+  "verdict": "touch"
+ }
+]

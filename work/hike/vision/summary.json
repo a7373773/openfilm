@@ -1,0 +1,36 @@
+{
+ "clips": 74,
+ "frames": 993,
+ "duration": 496.5,
+ "mean": {
+  "p_person": 0.899,
+  "p_people": 0.558,
+  "p_back": 0.632,
+  "p_landscape": 0.67,
+  "p_wide_vista": 0.091,
+  "p_blocked": 0.243,
+  "p_ground": 0.022,
+  "p_blurry": 0.659,
+  "p_clear": 0.341
+ },
+ "scenes": {
+  "other": 21,
+  "forest": 205,
+  "trail": 543,
+  "summit": 161,
+  "mountain": 63
+ },
+ "views": {
+  "back_close": 120,
+  "back_far": 712,
+  "facing": 30,
+  "ground_feet": 1,
+  "ahead_path": 21,
+  "vista_wide": 109
+ },
+ "person_frames": 972,
+ "back_frames": 798,
+ "vista_frames": 57,
+ "blocked_frames": 84,
+ "waste_clips": 18
+}
