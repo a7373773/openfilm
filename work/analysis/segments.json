@@ -1,0 +1,2916 @@
+{
+ "REC-0001-A.mp4": {
+  "file": "REC-0001-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "C 偏软",
+  "refs": {
+   "P90_sharp": 1084.5,
+   "P90_edgefrac": 0.635,
+   "P90_colorful": 46.7,
+   "median_sharp": 504.0,
+   "median_fineratio": 0.128
+  },
+  "bad_seconds": 39,
+  "usable_ratio": 0.675,
+  "mean_q": 0.664,
+  "q_p10": 0.344,
+  "blocked": [
+   {
+    "start": 0,
+    "end": 2,
+    "dur": 3,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 3
+    },
+    "mean_det": 0.096,
+    "mean_edge": 0.406,
+    "median_fineratio": 0.114,
+    "median_sharp": 130.4,
+    "median_luma": 161.2,
+    "median_lumastd": 50.5,
+    "median_uniform": 0.197,
+    "median_entropy": 5.48,
+    "median_warmfrac": 0.003,
+    "mean_diff": 21.9,
+    "conf": "mid"
+   },
+   {
+    "start": 5,
+    "end": 5,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.052,
+    "mean_edge": 0.229,
+    "median_fineratio": 0.089,
+    "median_sharp": 56.7,
+    "median_luma": 184.8,
+    "median_lumastd": 36.8,
+    "median_uniform": 0.349,
+    "median_entropy": 4.89,
+    "median_warmfrac": 0.001,
+    "mean_diff": 50.8,
+    "conf": "low"
+   },
+   {
+    "start": 9,
+    "end": 9,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.135,
+    "mean_edge": 0.401,
+    "median_fineratio": 0.087,
+    "median_sharp": 146.6,
+    "median_luma": 110.1,
+    "median_lumastd": 82.0,
+    "median_uniform": 0.081,
+    "median_entropy": 5.63,
+    "median_warmfrac": 0.012,
+    "mean_diff": 69.8,
+    "conf": "low"
+   },
+   {
+    "start": 20,
+    "end": 29,
+    "dur": 10,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 10
+    },
+    "mean_det": 0.042,
+    "mean_edge": 0.341,
+    "median_fineratio": 0.065,
+    "median_sharp": 19.6,
+    "median_luma": 156.7,
+    "median_lumastd": 58.7,
+    "median_uniform": 0.142,
+    "median_entropy": 5.55,
+    "median_warmfrac": 0.0,
+    "mean_diff": 18.7,
+    "conf": "high"
+   },
+   {
+    "start": 32,
+    "end": 42,
+    "dur": 11,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 8
+    },
+    "mean_det": 0.215,
+    "mean_edge": 0.38,
+    "median_fineratio": 0.11,
+    "median_sharp": 239.4,
+    "median_luma": 140.2,
+    "median_lumastd": 66.7,
+    "median_uniform": 0.131,
+    "median_entropy": 5.58,
+    "median_warmfrac": 0.049,
+    "mean_diff": 39.9,
+    "conf": "high"
+   },
+   {
+    "start": 53,
+    "end": 55,
+    "dur": 3,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 3
+    },
+    "mean_det": 0.16,
+    "mean_edge": 0.364,
+    "median_fineratio": 0.107,
+    "median_sharp": 180.8,
+    "median_luma": 135.2,
+    "median_lumastd": 59.4,
+    "median_uniform": 0.244,
+    "median_entropy": 5.46,
+    "median_warmfrac": 0.039,
+    "mean_diff": 25.4,
+    "conf": "mid"
+   },
+   {
+    "start": 60,
+    "end": 68,
+    "dur": 9,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 9
+    },
+    "mean_det": 0.124,
+    "mean_edge": 0.321,
+    "median_fineratio": 0.088,
+    "median_sharp": 105.0,
+    "median_luma": 135.3,
+    "median_lumastd": 78.9,
+    "median_uniform": 0.148,
+    "median_entropy": 5.58,
+    "median_warmfrac": 0.071,
+    "mean_diff": 56.9,
+    "conf": "high"
+   },
+   {
+    "start": 118,
+    "end": 118,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.178,
+    "mean_edge": 0.331,
+    "median_fineratio": 0.111,
+    "median_sharp": 193.1,
+    "median_luma": 53.3,
+    "median_lumastd": 40.0,
+    "median_uniform": 0.246,
+    "median_entropy": 4.92,
+    "median_warmfrac": 0.404,
+    "mean_diff": 86.2,
+    "conf": "low"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 10,
+    "end": 19,
+    "dur": 10,
+    "mean_q": 0.666,
+    "median_sharp": 431.6,
+    "median_fineratio": 0.141
+   },
+   {
+    "start": 43,
+    "end": 52,
+    "dur": 10,
+    "mean_q": 0.662,
+    "median_sharp": 529.2,
+    "median_fineratio": 0.12
+   },
+   {
+    "start": 69,
+    "end": 117,
+    "dur": 49,
+    "mean_q": 0.873,
+    "median_sharp": 889.3,
+    "median_fineratio": 0.164
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    109.1,
+    131.3,
+    161.2
+   ],
+   "sharp": [
+    19.2,
+    504.0,
+    1209.3
+   ],
+   "colorful": [
+    19.6,
+    40.3,
+    49.5
+   ],
+   "sat": [
+    0.16,
+    0.31,
+    0.434
+   ],
+   "entropy": [
+    5.03,
+    5.59,
+    5.77
+   ],
+   "fineratio": [
+    0.065,
+    0.128,
+    0.212
+   ],
+   "darkfrac_max": 0.392,
+   "brightfrac_max": 0.398
+  }
+ },
+ "REC-0002-A.mp4": {
+  "file": "REC-0002-A.mp4",
+  "duration": 120.13,
+  "n_frames": 120,
+  "grade": "B 中等",
+  "refs": {
+   "P90_sharp": 1872.2,
+   "P90_edgefrac": 0.818,
+   "P90_colorful": 64.8,
+   "median_sharp": 1047.4,
+   "median_fineratio": 0.155
+  },
+  "bad_seconds": 28,
+  "usable_ratio": 0.767,
+  "mean_q": 0.714,
+  "q_p10": 0.477,
+  "blocked": [
+   {
+    "start": 0,
+    "end": 16,
+    "dur": 17,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 17
+    },
+    "mean_det": 0.146,
+    "mean_edge": 0.267,
+    "median_fineratio": 0.099,
+    "median_sharp": 272.7,
+    "median_luma": 84.7,
+    "median_lumastd": 78.1,
+    "median_uniform": 0.163,
+    "median_entropy": 5.31,
+    "median_warmfrac": 0.307,
+    "mean_diff": 16.8,
+    "conf": "high"
+   },
+   {
+    "start": 20,
+    "end": 27,
+    "dur": 8,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 8
+    },
+    "mean_det": 0.096,
+    "mean_edge": 0.203,
+    "median_fineratio": 0.089,
+    "median_sharp": 180.8,
+    "median_luma": 77.3,
+    "median_lumastd": 82.8,
+    "median_uniform": 0.175,
+    "median_entropy": 4.96,
+    "median_warmfrac": 0.266,
+    "mean_diff": 42.5,
+    "conf": "high"
+   },
+   {
+    "start": 37,
+    "end": 37,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.182,
+    "mean_edge": 0.458,
+    "median_fineratio": 0.104,
+    "median_sharp": 340.1,
+    "median_luma": 100.1,
+    "median_lumastd": 79.4,
+    "median_uniform": 0.141,
+    "median_entropy": 5.67,
+    "median_warmfrac": 0.091,
+    "mean_diff": 63.1,
+    "conf": "low"
+   },
+   {
+    "start": 113,
+    "end": 113,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.202,
+    "mean_edge": 0.444,
+    "median_fineratio": 0.129,
+    "median_sharp": 377.4,
+    "median_luma": 127.9,
+    "median_lumastd": 64.3,
+    "median_uniform": 0.072,
+    "median_entropy": 5.68,
+    "median_warmfrac": 0.154,
+    "mean_diff": 49.4,
+    "conf": "low"
+   },
+   {
+    "start": 117,
+    "end": 117,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.242,
+    "mean_edge": 0.434,
+    "median_fineratio": 0.15,
+    "median_sharp": 452.6,
+    "median_luma": 140.7,
+    "median_lumastd": 66.3,
+    "median_uniform": 0.171,
+    "median_entropy": 5.24,
+    "median_warmfrac": 0.101,
+    "mean_diff": 29.6,
+    "conf": "low"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 28,
+    "end": 36,
+    "dur": 9,
+    "mean_q": 0.739,
+    "median_sharp": 1037.8,
+    "median_fineratio": 0.17
+   },
+   {
+    "start": 38,
+    "end": 112,
+    "dur": 75,
+    "mean_q": 0.809,
+    "median_sharp": 1229.1,
+    "median_fineratio": 0.162
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    80.9,
+    119.2,
+    138.9
+   ],
+   "sharp": [
+    197.5,
+    1047.4,
+    2194.8
+   ],
+   "colorful": [
+    36.0,
+    46.4,
+    67.5
+   ],
+   "sat": [
+    0.287,
+    0.408,
+    0.532
+   ],
+   "entropy": [
+    4.98,
+    5.56,
+    5.84
+   ],
+   "fineratio": [
+    0.092,
+    0.155,
+    0.215
+   ],
+   "darkfrac_max": 0.377,
+   "brightfrac_max": 0.401
+  }
+ },
+ "REC-0003-A.mp4": {
+  "file": "REC-0003-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "C 偏软",
+  "refs": {
+   "P90_sharp": 692.9,
+   "P90_edgefrac": 0.448,
+   "P90_colorful": 41.2,
+   "median_sharp": 323.1,
+   "median_fineratio": 0.12
+  },
+  "bad_seconds": 26,
+  "usable_ratio": 0.783,
+  "mean_q": 0.656,
+  "q_p10": 0.446,
+  "blocked": [
+   {
+    "start": 23,
+    "end": 23,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.188,
+    "mean_edge": 0.442,
+    "median_fineratio": 0.103,
+    "median_sharp": 130.1,
+    "median_luma": 144.7,
+    "median_lumastd": 56.1,
+    "median_uniform": 0.267,
+    "median_entropy": 5.28,
+    "median_warmfrac": 0.005,
+    "mean_diff": 35.0,
+    "conf": "low"
+   },
+   {
+    "start": 26,
+    "end": 28,
+    "dur": 3,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 3
+    },
+    "mean_det": 0.216,
+    "mean_edge": 0.388,
+    "median_fineratio": 0.102,
+    "median_sharp": 163.3,
+    "median_luma": 147.1,
+    "median_lumastd": 58.6,
+    "median_uniform": 0.279,
+    "median_entropy": 5.16,
+    "median_warmfrac": 0.016,
+    "mean_diff": 24.7,
+    "conf": "mid"
+   },
+   {
+    "start": 32,
+    "end": 47,
+    "dur": 16,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 15
+    },
+    "mean_det": 0.159,
+    "mean_edge": 0.232,
+    "median_fineratio": 0.118,
+    "median_sharp": 106.2,
+    "median_luma": 143.5,
+    "median_lumastd": 62.3,
+    "median_uniform": 0.269,
+    "median_entropy": 5.06,
+    "median_warmfrac": 0.027,
+    "mean_diff": 16.3,
+    "conf": "high"
+   },
+   {
+    "start": 53,
+    "end": 54,
+    "dur": 2,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 2
+    },
+    "mean_det": 0.101,
+    "mean_edge": 0.296,
+    "median_fineratio": 0.102,
+    "median_sharp": 69.7,
+    "median_luma": 141.1,
+    "median_lumastd": 64.7,
+    "median_uniform": 0.276,
+    "median_entropy": 5.03,
+    "median_warmfrac": 0.006,
+    "mean_diff": 18.4,
+    "conf": "mid"
+   },
+   {
+    "start": 62,
+    "end": 63,
+    "dur": 2,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 2
+    },
+    "mean_det": 0.108,
+    "mean_edge": 0.465,
+    "median_fineratio": 0.095,
+    "median_sharp": 74.5,
+    "median_luma": 146.6,
+    "median_lumastd": 49.4,
+    "median_uniform": 0.227,
+    "median_entropy": 5.42,
+    "median_warmfrac": 0.007,
+    "mean_diff": 17.7,
+    "conf": "mid"
+   },
+   {
+    "start": 66,
+    "end": 66,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.191,
+    "mean_edge": 0.315,
+    "median_fineratio": 0.122,
+    "median_sharp": 132.5,
+    "median_luma": 141.5,
+    "median_lumastd": 68.4,
+    "median_uniform": 0.328,
+    "median_entropy": 4.78,
+    "median_warmfrac": 0.014,
+    "mean_diff": 28.3,
+    "conf": "low"
+   },
+   {
+    "start": 94,
+    "end": 94,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.222,
+    "mean_edge": 0.446,
+    "median_fineratio": 0.113,
+    "median_sharp": 154.0,
+    "median_luma": 135.6,
+    "median_lumastd": 76.5,
+    "median_uniform": 0.167,
+    "median_entropy": 5.25,
+    "median_warmfrac": 0.02,
+    "mean_diff": 44.4,
+    "conf": "low"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 22,
+    "dur": 23,
+    "mean_q": 0.795,
+    "median_sharp": 510.5,
+    "median_fineratio": 0.145
+   },
+   {
+    "start": 48,
+    "end": 52,
+    "dur": 5,
+    "mean_q": 0.571,
+    "median_sharp": 244.7,
+    "median_fineratio": 0.119
+   },
+   {
+    "start": 55,
+    "end": 61,
+    "dur": 7,
+    "mean_q": 0.469,
+    "median_sharp": 113.0,
+    "median_fineratio": 0.103
+   },
+   {
+    "start": 67,
+    "end": 93,
+    "dur": 27,
+    "mean_q": 0.684,
+    "median_sharp": 357.0,
+    "median_fineratio": 0.122
+   },
+   {
+    "start": 95,
+    "end": 119,
+    "dur": 25,
+    "mean_q": 0.786,
+    "median_sharp": 577.9,
+    "median_fineratio": 0.117
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    121.5,
+    137.7,
+    150.2
+   ],
+   "sharp": [
+    89.5,
+    323.1,
+    850.4
+   ],
+   "colorful": [
+    21.3,
+    29.1,
+    46.9
+   ],
+   "sat": [
+    0.184,
+    0.296,
+    0.386
+   ],
+   "entropy": [
+    4.9,
+    5.34,
+    5.69
+   ],
+   "fineratio": [
+    0.098,
+    0.12,
+    0.157
+   ],
+   "darkfrac_max": 0.278,
+   "brightfrac_max": 0.363
+  }
+ },
+ "REC-0004-A.mp4": {
+  "file": "REC-0004-A.mp4",
+  "duration": 58.24,
+  "n_frames": 58,
+  "grade": "C 偏软",
+  "refs": {
+   "P90_sharp": 1926.8,
+   "P90_edgefrac": 0.712,
+   "P90_colorful": 39.3,
+   "median_sharp": 438.2,
+   "median_fineratio": 0.125
+  },
+  "bad_seconds": 22,
+  "usable_ratio": 0.621,
+  "mean_q": 0.618,
+  "q_p10": 0.454,
+  "blocked": [
+   {
+    "start": 0,
+    "end": 13,
+    "dur": 14,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 12,
+     "BLOCK": 1
+    },
+    "mean_det": 0.123,
+    "mean_edge": 0.303,
+    "median_fineratio": 0.111,
+    "median_sharp": 257.2,
+    "median_luma": 140.5,
+    "median_lumastd": 72.7,
+    "median_uniform": 0.223,
+    "median_entropy": 5.17,
+    "median_warmfrac": 0.061,
+    "mean_diff": 34.0,
+    "conf": "high"
+   },
+   {
+    "start": 18,
+    "end": 21,
+    "dur": 4,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 4
+    },
+    "mean_det": 0.124,
+    "mean_edge": 0.393,
+    "median_fineratio": 0.115,
+    "median_sharp": 277.8,
+    "median_luma": 134.9,
+    "median_lumastd": 88.7,
+    "median_uniform": 0.067,
+    "median_entropy": 5.02,
+    "median_warmfrac": 0.029,
+    "mean_diff": 32.6,
+    "conf": "mid"
+   },
+   {
+    "start": 24,
+    "end": 24,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.139,
+    "mean_edge": 0.469,
+    "median_fineratio": 0.123,
+    "median_sharp": 268.5,
+    "median_luma": 121.7,
+    "median_lumastd": 90.1,
+    "median_uniform": 0.16,
+    "median_entropy": 5.04,
+    "median_warmfrac": 0.035,
+    "mean_diff": 38.7,
+    "conf": "low"
+   },
+   {
+    "start": 35,
+    "end": 37,
+    "dur": 3,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 2
+    },
+    "mean_det": 0.171,
+    "mean_edge": 0.487,
+    "median_fineratio": 0.123,
+    "median_sharp": 394.6,
+    "median_luma": 146.7,
+    "median_lumastd": 81.4,
+    "median_uniform": 0.21,
+    "median_entropy": 5.01,
+    "median_warmfrac": 0.021,
+    "mean_diff": 67.2,
+    "conf": "mid"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 25,
+    "end": 34,
+    "dur": 10,
+    "mean_q": 0.557,
+    "median_sharp": 450.9,
+    "median_fineratio": 0.125
+   },
+   {
+    "start": 38,
+    "end": 57,
+    "dur": 20,
+    "mean_q": 0.822,
+    "median_sharp": 1274.7,
+    "median_fineratio": 0.189
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    102.4,
+    125.1,
+    147.5
+   ],
+   "sharp": [
+    155.6,
+    438.2,
+    2417.4
+   ],
+   "colorful": [
+    25.7,
+    32.6,
+    40.0
+   ],
+   "sat": [
+    0.226,
+    0.41,
+    0.57
+   ],
+   "entropy": [
+    4.64,
+    5.0,
+    5.6
+   ],
+   "fineratio": [
+    0.096,
+    0.125,
+    0.216
+   ],
+   "darkfrac_max": 0.185,
+   "brightfrac_max": 0.412
+  }
+ },
+ "REC-0005-A.mp4": {
+  "file": "REC-0005-A.mp4",
+  "duration": 120.19,
+  "n_frames": 120,
+  "grade": "B 中等",
+  "refs": {
+   "P90_sharp": 4469.2,
+   "P90_edgefrac": 0.914,
+   "P90_colorful": 47.5,
+   "median_sharp": 1933.3,
+   "median_fineratio": 0.182
+  },
+  "bad_seconds": 20,
+  "usable_ratio": 0.833,
+  "mean_q": 0.717,
+  "q_p10": 0.459,
+  "blocked": [
+   {
+    "start": 1,
+    "end": 15,
+    "dur": 15,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 11,
+     "BLOCK": 2
+    },
+    "mean_det": 0.037,
+    "mean_edge": 0.353,
+    "median_fineratio": 0.113,
+    "median_sharp": 153.4,
+    "median_luma": 131.4,
+    "median_lumastd": 79.8,
+    "median_uniform": 0.105,
+    "median_entropy": 5.17,
+    "median_warmfrac": 0.022,
+    "mean_diff": 41.3,
+    "conf": "high"
+   },
+   {
+    "start": 25,
+    "end": 29,
+    "dur": 5,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 5
+    },
+    "mean_det": 0.056,
+    "mean_edge": 0.431,
+    "median_fineratio": 0.118,
+    "median_sharp": 228.4,
+    "median_luma": 124.5,
+    "median_lumastd": 84.6,
+    "median_uniform": 0.117,
+    "median_entropy": 5.51,
+    "median_warmfrac": 0.123,
+    "mean_diff": 28.0,
+    "conf": "high"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 16,
+    "end": 24,
+    "dur": 9,
+    "mean_q": 0.532,
+    "median_sharp": 448.6,
+    "median_fineratio": 0.145
+   },
+   {
+    "start": 30,
+    "end": 119,
+    "dur": 90,
+    "mean_q": 0.8,
+    "median_sharp": 3155.4,
+    "median_fineratio": 0.195
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    101.0,
+    123.7,
+    141.7
+   ],
+   "sharp": [
+    147.9,
+    1933.3,
+    4975.2
+   ],
+   "colorful": [
+    23.3,
+    34.2,
+    48.9
+   ],
+   "sat": [
+    0.24,
+    0.355,
+    0.577
+   ],
+   "entropy": [
+    4.94,
+    5.35,
+    5.83
+   ],
+   "fineratio": [
+    0.107,
+    0.182,
+    0.233
+   ],
+   "darkfrac_max": 0.202,
+   "brightfrac_max": 0.422
+  }
+ },
+ "REC-0006-A.mp4": {
+  "file": "REC-0006-A.mp4",
+  "duration": 120.03,
+  "n_frames": 120,
+  "grade": "B 中等",
+  "refs": {
+   "P90_sharp": 3410.8,
+   "P90_edgefrac": 0.893,
+   "P90_colorful": 47.3,
+   "median_sharp": 1421.4,
+   "median_fineratio": 0.195
+  },
+  "bad_seconds": 39,
+  "usable_ratio": 0.675,
+  "mean_q": 0.709,
+  "q_p10": 0.413,
+  "blocked": [
+   {
+    "start": 55,
+    "end": 67,
+    "dur": 13,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 12,
+     "BLOCK": 1
+    },
+    "mean_det": 0.035,
+    "mean_edge": 0.201,
+    "median_fineratio": 0.134,
+    "median_sharp": 102.5,
+    "median_luma": 147.7,
+    "median_lumastd": 53.6,
+    "median_uniform": 0.319,
+    "median_entropy": 4.96,
+    "median_warmfrac": 0.045,
+    "mean_diff": 12.8,
+    "conf": "high"
+   },
+   {
+    "start": 74,
+    "end": 83,
+    "dur": 10,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLOCK": 2,
+     "BLUR": 7
+    },
+    "mean_det": 0.058,
+    "mean_edge": 0.279,
+    "median_fineratio": 0.122,
+    "median_sharp": 100.1,
+    "median_luma": 141.2,
+    "median_lumastd": 65.2,
+    "median_uniform": 0.241,
+    "median_entropy": 5.09,
+    "median_warmfrac": 0.109,
+    "mean_diff": 19.4,
+    "conf": "high"
+   },
+   {
+    "start": 104,
+    "end": 119,
+    "dur": 16,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 16
+    },
+    "mean_det": 0.036,
+    "mean_edge": 0.252,
+    "median_fineratio": 0.131,
+    "median_sharp": 117.2,
+    "median_luma": 140.8,
+    "median_lumastd": 67.7,
+    "median_uniform": 0.218,
+    "median_entropy": 5.22,
+    "median_warmfrac": 0.064,
+    "mean_diff": 13.9,
+    "conf": "high"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 54,
+    "dur": 55,
+    "mean_q": 0.89,
+    "median_sharp": 2916.0,
+    "median_fineratio": 0.206
+   },
+   {
+    "start": 68,
+    "end": 73,
+    "dur": 6,
+    "mean_q": 0.553,
+    "median_sharp": 303.9,
+    "median_fineratio": 0.172
+   },
+   {
+    "start": 84,
+    "end": 103,
+    "dur": 20,
+    "mean_q": 0.78,
+    "median_sharp": 1347.2,
+    "median_fineratio": 0.208
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    117.8,
+    137.8,
+    151.3
+   ],
+   "sharp": [
+    89.3,
+    1421.4,
+    3826.8
+   ],
+   "colorful": [
+    23.8,
+    33.7,
+    48.9
+   ],
+   "sat": [
+    0.212,
+    0.327,
+    0.518
+   ],
+   "entropy": [
+    4.92,
+    5.45,
+    5.75
+   ],
+   "fineratio": [
+    0.116,
+    0.195,
+    0.228
+   ],
+   "darkfrac_max": 0.089,
+   "brightfrac_max": 0.321
+  }
+ },
+ "REC-0007-A.mp4": {
+  "file": "REC-0007-A.mp4",
+  "duration": 120.13,
+  "n_frames": 120,
+  "grade": "C 偏软",
+  "refs": {
+   "P90_sharp": 1696.2,
+   "P90_edgefrac": 0.687,
+   "P90_colorful": 45.2,
+   "median_sharp": 345.4,
+   "median_fineratio": 0.141
+  },
+  "bad_seconds": 46,
+  "usable_ratio": 0.617,
+  "mean_q": 0.606,
+  "q_p10": 0.408,
+  "blocked": [
+   {
+    "start": 0,
+    "end": 0,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.126,
+    "mean_edge": 0.429,
+    "median_fineratio": 0.157,
+    "median_sharp": 214.4,
+    "median_luma": 140.4,
+    "median_lumastd": 66.8,
+    "median_uniform": 0.231,
+    "median_entropy": 5.08,
+    "median_warmfrac": 0.094,
+    "mean_diff": 0.0,
+    "conf": "low"
+   },
+   {
+    "start": 12,
+    "end": 14,
+    "dur": 3,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 3
+    },
+    "mean_det": 0.076,
+    "mean_edge": 0.355,
+    "median_fineratio": 0.142,
+    "median_sharp": 118.0,
+    "median_luma": 146.1,
+    "median_lumastd": 69.6,
+    "median_uniform": 0.158,
+    "median_entropy": 5.33,
+    "median_warmfrac": 0.013,
+    "mean_diff": 32.1,
+    "conf": "mid"
+   },
+   {
+    "start": 18,
+    "end": 20,
+    "dur": 3,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 2,
+     "BLOCK": 1
+    },
+    "mean_det": 0.033,
+    "mean_edge": 0.217,
+    "median_fineratio": 0.104,
+    "median_sharp": 41.0,
+    "median_luma": 144.5,
+    "median_lumastd": 62.1,
+    "median_uniform": 0.226,
+    "median_entropy": 5.15,
+    "median_warmfrac": 0.008,
+    "mean_diff": 42.3,
+    "conf": "mid"
+   },
+   {
+    "start": 25,
+    "end": 25,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.065,
+    "mean_edge": 0.298,
+    "median_fineratio": 0.149,
+    "median_sharp": 110.4,
+    "median_luma": 122.8,
+    "median_lumastd": 62.4,
+    "median_uniform": 0.066,
+    "median_entropy": 5.22,
+    "median_warmfrac": 0.087,
+    "mean_diff": 27.8,
+    "conf": "low"
+   },
+   {
+    "start": 29,
+    "end": 36,
+    "dur": 8,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 7
+    },
+    "mean_det": 0.157,
+    "mean_edge": 0.396,
+    "median_fineratio": 0.125,
+    "median_sharp": 287.1,
+    "median_luma": 132.7,
+    "median_lumastd": 71.4,
+    "median_uniform": 0.211,
+    "median_entropy": 5.2,
+    "median_warmfrac": 0.167,
+    "mean_diff": 27.6,
+    "conf": "high"
+   },
+   {
+    "start": 54,
+    "end": 76,
+    "dur": 23,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 23
+    },
+    "mean_det": 0.07,
+    "mean_edge": 0.344,
+    "median_fineratio": 0.102,
+    "median_sharp": 105.6,
+    "median_luma": 133.2,
+    "median_lumastd": 77.9,
+    "median_uniform": 0.093,
+    "median_entropy": 5.38,
+    "median_warmfrac": 0.031,
+    "mean_diff": 19.9,
+    "conf": "high"
+   },
+   {
+    "start": 79,
+    "end": 79,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.098,
+    "mean_edge": 0.43,
+    "median_fineratio": 0.101,
+    "median_sharp": 165.5,
+    "median_luma": 126.9,
+    "median_lumastd": 86.0,
+    "median_uniform": 0.063,
+    "median_entropy": 5.37,
+    "median_warmfrac": 0.055,
+    "mean_diff": 21.6,
+    "conf": "low"
+   },
+   {
+    "start": 82,
+    "end": 83,
+    "dur": 2,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 2
+    },
+    "mean_det": 0.097,
+    "mean_edge": 0.445,
+    "median_fineratio": 0.113,
+    "median_sharp": 164.3,
+    "median_luma": 125.5,
+    "median_lumastd": 84.6,
+    "median_uniform": 0.032,
+    "median_entropy": 5.27,
+    "median_warmfrac": 0.04,
+    "mean_diff": 17.7,
+    "conf": "mid"
+   },
+   {
+    "start": 91,
+    "end": 91,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.119,
+    "mean_edge": 0.48,
+    "median_fineratio": 0.116,
+    "median_sharp": 202.5,
+    "median_luma": 126.3,
+    "median_lumastd": 85.3,
+    "median_uniform": 0.056,
+    "median_entropy": 5.25,
+    "median_warmfrac": 0.068,
+    "mean_diff": 29.1,
+    "conf": "low"
+   },
+   {
+    "start": 97,
+    "end": 97,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.116,
+    "mean_edge": 0.452,
+    "median_fineratio": 0.115,
+    "median_sharp": 196.4,
+    "median_luma": 130.6,
+    "median_lumastd": 86.9,
+    "median_uniform": 0.035,
+    "median_entropy": 5.19,
+    "median_warmfrac": 0.061,
+    "mean_diff": 35.2,
+    "conf": "low"
+   },
+   {
+    "start": 117,
+    "end": 118,
+    "dur": 2,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 2
+    },
+    "mean_det": 0.079,
+    "mean_edge": 0.28,
+    "median_fineratio": 0.112,
+    "median_sharp": 134.1,
+    "median_luma": 141.0,
+    "median_lumastd": 74.3,
+    "median_uniform": 0.211,
+    "median_entropy": 5.01,
+    "median_warmfrac": 0.037,
+    "mean_diff": 53.7,
+    "conf": "mid"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 1,
+    "end": 11,
+    "dur": 11,
+    "mean_q": 0.858,
+    "median_sharp": 1682.4,
+    "median_fineratio": 0.195
+   },
+   {
+    "start": 37,
+    "end": 53,
+    "dur": 17,
+    "mean_q": 0.828,
+    "median_sharp": 1451.9,
+    "median_fineratio": 0.179
+   },
+   {
+    "start": 84,
+    "end": 90,
+    "dur": 7,
+    "mean_q": 0.576,
+    "median_sharp": 349.1,
+    "median_fineratio": 0.14
+   },
+   {
+    "start": 92,
+    "end": 96,
+    "dur": 5,
+    "mean_q": 0.592,
+    "median_sharp": 386.4,
+    "median_fineratio": 0.138
+   },
+   {
+    "start": 98,
+    "end": 116,
+    "dur": 19,
+    "mean_q": 0.686,
+    "median_sharp": 591.9,
+    "median_fineratio": 0.17
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    113.8,
+    130.2,
+    144.5
+   ],
+   "sharp": [
+    71.4,
+    345.4,
+    2405.6
+   ],
+   "colorful": [
+    26.4,
+    36.3,
+    47.9
+   ],
+   "sat": [
+    0.27,
+    0.4,
+    0.518
+   ],
+   "entropy": [
+    4.92,
+    5.32,
+    5.53
+   ],
+   "fineratio": [
+    0.095,
+    0.141,
+    0.203
+   ],
+   "darkfrac_max": 0.242,
+   "brightfrac_max": 0.326
+  }
+ },
+ "REC-0008-A.mp4": {
+  "file": "REC-0008-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "B 中等",
+  "refs": {
+   "P90_sharp": 2920.9,
+   "P90_edgefrac": 0.859,
+   "P90_colorful": 53.8,
+   "median_sharp": 1314.0,
+   "median_fineratio": 0.184
+  },
+  "bad_seconds": 36,
+  "usable_ratio": 0.7,
+  "mean_q": 0.701,
+  "q_p10": 0.399,
+  "blocked": [
+   {
+    "start": 0,
+    "end": 22,
+    "dur": 23,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 18,
+     "BLOCK": 5
+    },
+    "mean_det": 0.071,
+    "mean_edge": 0.21,
+    "median_fineratio": 0.123,
+    "median_sharp": 219.3,
+    "median_luma": 129.3,
+    "median_lumastd": 80.1,
+    "median_uniform": 0.072,
+    "median_entropy": 5.29,
+    "median_warmfrac": 0.129,
+    "mean_diff": 41.2,
+    "conf": "high"
+   },
+   {
+    "start": 28,
+    "end": 32,
+    "dur": 5,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 5
+    },
+    "mean_det": 0.091,
+    "mean_edge": 0.392,
+    "median_fineratio": 0.131,
+    "median_sharp": 286.8,
+    "median_luma": 128.6,
+    "median_lumastd": 93.5,
+    "median_uniform": 0.063,
+    "median_entropy": 5.05,
+    "median_warmfrac": 0.032,
+    "mean_diff": 18.6,
+    "conf": "high"
+   },
+   {
+    "start": 61,
+    "end": 61,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.024,
+    "mean_edge": 0.15,
+    "median_fineratio": 0.127,
+    "median_sharp": 71.5,
+    "median_luma": 148.1,
+    "median_lumastd": 61.4,
+    "median_uniform": 0.294,
+    "median_entropy": 5.17,
+    "median_warmfrac": 0.015,
+    "mean_diff": 49.6,
+    "conf": "low"
+   },
+   {
+    "start": 70,
+    "end": 75,
+    "dur": 6,
+    "label": "BLOCK",
+    "label_txt": "无细节/疑似遮挡",
+    "mix": {
+     "BLOCK": 3,
+     "BLUR": 3
+    },
+    "mean_det": 0.018,
+    "mean_edge": 0.145,
+    "median_fineratio": 0.087,
+    "median_sharp": 49.2,
+    "median_luma": 144.6,
+    "median_lumastd": 72.8,
+    "median_uniform": 0.187,
+    "median_entropy": 5.07,
+    "median_warmfrac": 0.0,
+    "mean_diff": 35.6,
+    "conf": "high"
+   },
+   {
+    "start": 100,
+    "end": 100,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.155,
+    "mean_edge": 0.398,
+    "median_fineratio": 0.145,
+    "median_sharp": 452.3,
+    "median_luma": 139.2,
+    "median_lumastd": 82.6,
+    "median_uniform": 0.044,
+    "median_entropy": 5.41,
+    "median_warmfrac": 0.044,
+    "mean_diff": 46.8,
+    "conf": "low"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 23,
+    "end": 27,
+    "dur": 5,
+    "mean_q": 0.676,
+    "median_sharp": 1202.0,
+    "median_fineratio": 0.179
+   },
+   {
+    "start": 33,
+    "end": 60,
+    "dur": 28,
+    "mean_q": 0.795,
+    "median_sharp": 1511.8,
+    "median_fineratio": 0.197
+   },
+   {
+    "start": 62,
+    "end": 69,
+    "dur": 8,
+    "mean_q": 0.87,
+    "median_sharp": 2229.3,
+    "median_fineratio": 0.21
+   },
+   {
+    "start": 76,
+    "end": 99,
+    "dur": 24,
+    "mean_q": 0.862,
+    "median_sharp": 1894.5,
+    "median_fineratio": 0.201
+   },
+   {
+    "start": 101,
+    "end": 119,
+    "dur": 19,
+    "mean_q": 0.86,
+    "median_sharp": 3056.7,
+    "median_fineratio": 0.187
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    108.3,
+    123.9,
+    147.9
+   ],
+   "sharp": [
+    72.5,
+    1314.0,
+    3183.9
+   ],
+   "colorful": [
+    25.4,
+    39.8,
+    56.7
+   ],
+   "sat": [
+    0.216,
+    0.461,
+    0.6
+   ],
+   "entropy": [
+    4.59,
+    5.29,
+    5.62
+   ],
+   "fineratio": [
+    0.087,
+    0.184,
+    0.23
+   ],
+   "darkfrac_max": 0.26,
+   "brightfrac_max": 0.31
+  }
+ },
+ "REC-0012-A.mp4": {
+  "file": "REC-0012-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "A 清晰",
+  "refs": {
+   "P90_sharp": 4548.0,
+   "P90_edgefrac": 0.882,
+   "P90_colorful": 51.8,
+   "median_sharp": 3055.2,
+   "median_fineratio": 0.191
+  },
+  "bad_seconds": 1,
+  "usable_ratio": 0.992,
+  "mean_q": 0.84,
+  "q_p10": 0.675,
+  "blocked": [
+   {
+    "start": 29,
+    "end": 29,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.148,
+    "mean_edge": 0.485,
+    "median_fineratio": 0.15,
+    "median_sharp": 672.8,
+    "median_luma": 114.3,
+    "median_lumastd": 90.1,
+    "median_uniform": 0.065,
+    "median_entropy": 5.37,
+    "median_warmfrac": 0.017,
+    "mean_diff": 22.1,
+    "conf": "low"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 28,
+    "dur": 29,
+    "mean_q": 0.717,
+    "median_sharp": 1755.8,
+    "median_fineratio": 0.183
+   },
+   {
+    "start": 30,
+    "end": 119,
+    "dur": 90,
+    "mean_q": 0.883,
+    "median_sharp": 3541.6,
+    "median_fineratio": 0.193
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    99.2,
+    118.7,
+    141.1
+   ],
+   "sharp": [
+    996.9,
+    3055.2,
+    5289.0
+   ],
+   "colorful": [
+    29.0,
+    41.7,
+    57.7
+   ],
+   "sat": [
+    0.241,
+    0.388,
+    0.563
+   ],
+   "entropy": [
+    4.8,
+    5.34,
+    5.7
+   ],
+   "fineratio": [
+    0.154,
+    0.191,
+    0.227
+   ],
+   "darkfrac_max": 0.287,
+   "brightfrac_max": 0.361
+  }
+ },
+ "REC-0013-A.mp4": {
+  "file": "REC-0013-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "A 清晰",
+  "refs": {
+   "P90_sharp": 4581.2,
+   "P90_edgefrac": 0.884,
+   "P90_colorful": 46.1,
+   "median_sharp": 3117.7,
+   "median_fineratio": 0.196
+  },
+  "bad_seconds": 1,
+  "usable_ratio": 0.992,
+  "mean_q": 0.853,
+  "q_p10": 0.692,
+  "blocked": [
+   {
+    "start": 46,
+    "end": 46,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.046,
+    "mean_edge": 0.273,
+    "median_fineratio": 0.077,
+    "median_sharp": 209.3,
+    "median_luma": 60.4,
+    "median_lumastd": 58.0,
+    "median_uniform": 0.359,
+    "median_entropy": 5.04,
+    "median_warmfrac": 0.038,
+    "mean_diff": 69.4,
+    "conf": "low"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 45,
+    "dur": 46,
+    "mean_q": 0.884,
+    "median_sharp": 3479.2,
+    "median_fineratio": 0.196
+   },
+   {
+    "start": 47,
+    "end": 119,
+    "dur": 73,
+    "mean_q": 0.841,
+    "median_sharp": 2895.8,
+    "median_fineratio": 0.193
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    91.3,
+    113.7,
+    135.5
+   ],
+   "sharp": [
+    1674.3,
+    3117.7,
+    5322.2
+   ],
+   "colorful": [
+    24.2,
+    37.1,
+    47.8
+   ],
+   "sat": [
+    0.183,
+    0.286,
+    0.494
+   ],
+   "entropy": [
+    5.02,
+    5.43,
+    5.73
+   ],
+   "fineratio": [
+    0.156,
+    0.196,
+    0.233
+   ],
+   "darkfrac_max": 0.304,
+   "brightfrac_max": 0.252
+  }
+ },
+ "REC-0014-A.mp4": {
+  "file": "REC-0014-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "A 清晰",
+  "refs": {
+   "P90_sharp": 4517.3,
+   "P90_edgefrac": 0.877,
+   "P90_colorful": 46.7,
+   "median_sharp": 2886.6,
+   "median_fineratio": 0.182
+  },
+  "bad_seconds": 0,
+  "usable_ratio": 1.0,
+  "mean_q": 0.813,
+  "q_p10": 0.657,
+  "blocked": [],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 119,
+    "dur": 120,
+    "mean_q": 0.813,
+    "median_sharp": 2886.6,
+    "median_fineratio": 0.182
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    92.3,
+    112.9,
+    135.7
+   ],
+   "sharp": [
+    1363.8,
+    2886.6,
+    4754.1
+   ],
+   "colorful": [
+    25.1,
+    35.9,
+    49.9
+   ],
+   "sat": [
+    0.205,
+    0.312,
+    0.474
+   ],
+   "entropy": [
+    5.08,
+    5.41,
+    5.7
+   ],
+   "fineratio": [
+    0.135,
+    0.182,
+    0.215
+   ],
+   "darkfrac_max": 0.215,
+   "brightfrac_max": 0.264
+  }
+ },
+ "REC-0015-A.mp4": {
+  "file": "REC-0015-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "A 清晰",
+  "refs": {
+   "P90_sharp": 3676.8,
+   "P90_edgefrac": 0.89,
+   "P90_colorful": 47.4,
+   "median_sharp": 2284.8,
+   "median_fineratio": 0.163
+  },
+  "bad_seconds": 1,
+  "usable_ratio": 0.992,
+  "mean_q": 0.78,
+  "q_p10": 0.599,
+  "blocked": [
+   {
+    "start": 27,
+    "end": 27,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.202,
+    "mean_edge": 0.395,
+    "median_fineratio": 0.128,
+    "median_sharp": 741.2,
+    "median_luma": 129.6,
+    "median_lumastd": 93.0,
+    "median_uniform": 0.031,
+    "median_entropy": 5.6,
+    "median_warmfrac": 0.011,
+    "mean_diff": 72.5,
+    "conf": "low"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 26,
+    "dur": 27,
+    "mean_q": 0.78,
+    "median_sharp": 2816.4,
+    "median_fineratio": 0.168
+   },
+   {
+    "start": 28,
+    "end": 119,
+    "dur": 92,
+    "mean_q": 0.783,
+    "median_sharp": 2173.3,
+    "median_fineratio": 0.163
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    100.1,
+    121.7,
+    144.2
+   ],
+   "sharp": [
+    755.2,
+    2284.8,
+    4010.4
+   ],
+   "colorful": [
+    27.1,
+    37.2,
+    49.1
+   ],
+   "sat": [
+    0.221,
+    0.308,
+    0.43
+   ],
+   "entropy": [
+    5.26,
+    5.59,
+    5.78
+   ],
+   "fineratio": [
+    0.113,
+    0.163,
+    0.209
+   ],
+   "darkfrac_max": 0.208,
+   "brightfrac_max": 0.369
+  }
+ },
+ "REC-0016-A.mp4": {
+  "file": "REC-0016-A.mp4",
+  "duration": 67.84,
+  "n_frames": 68,
+  "grade": "B 中等",
+  "refs": {
+   "P90_sharp": 2955.0,
+   "P90_edgefrac": 0.796,
+   "P90_colorful": 67.4,
+   "median_sharp": 1539.8,
+   "median_fineratio": 0.201
+  },
+  "bad_seconds": 0,
+  "usable_ratio": 1.0,
+  "mean_q": 0.779,
+  "q_p10": 0.601,
+  "blocked": [],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 67,
+    "dur": 68,
+    "mean_q": 0.779,
+    "median_sharp": 1539.8,
+    "median_fineratio": 0.201
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    100.4,
+    125.9,
+    139.9
+   ],
+   "sharp": [
+    511.8,
+    1539.8,
+    3611.3
+   ],
+   "colorful": [
+    29.7,
+    54.9,
+    70.0
+   ],
+   "sat": [
+    0.234,
+    0.437,
+    0.58
+   ],
+   "entropy": [
+    5.18,
+    5.45,
+    5.83
+   ],
+   "fineratio": [
+    0.122,
+    0.201,
+    0.24
+   ],
+   "darkfrac_max": 0.156,
+   "brightfrac_max": 0.23
+  }
+ },
+ "REC-0017-A.mp4": {
+  "file": "REC-0017-A.mp4",
+  "duration": 120.13,
+  "n_frames": 120,
+  "grade": "A 清晰",
+  "refs": {
+   "P90_sharp": 4613.8,
+   "P90_edgefrac": 0.852,
+   "P90_colorful": 40.5,
+   "median_sharp": 3175.8,
+   "median_fineratio": 0.182
+  },
+  "bad_seconds": 0,
+  "usable_ratio": 1.0,
+  "mean_q": 0.84,
+  "q_p10": 0.702,
+  "blocked": [],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 119,
+    "dur": 120,
+    "mean_q": 0.84,
+    "median_sharp": 3175.8,
+    "median_fineratio": 0.182
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    104.7,
+    124.1,
+    140.5
+   ],
+   "sharp": [
+    1794.5,
+    3175.8,
+    5050.7
+   ],
+   "colorful": [
+    24.7,
+    33.4,
+    44.1
+   ],
+   "sat": [
+    0.237,
+    0.316,
+    0.415
+   ],
+   "entropy": [
+    5.29,
+    5.55,
+    5.76
+   ],
+   "fineratio": [
+    0.148,
+    0.182,
+    0.209
+   ],
+   "darkfrac_max": 0.175,
+   "brightfrac_max": 0.268
+  }
+ },
+ "REC-0018-A.mp4": {
+  "file": "REC-0018-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "A 清晰",
+  "refs": {
+   "P90_sharp": 3825.2,
+   "P90_edgefrac": 0.87,
+   "P90_colorful": 46.9,
+   "median_sharp": 2758.4,
+   "median_fineratio": 0.183
+  },
+  "bad_seconds": 1,
+  "usable_ratio": 0.992,
+  "mean_q": 0.819,
+  "q_p10": 0.568,
+  "blocked": [
+   {
+    "start": 36,
+    "end": 36,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.176,
+    "mean_edge": 0.285,
+    "median_fineratio": 0.146,
+    "median_sharp": 673.6,
+    "median_luma": 59.8,
+    "median_lumastd": 32.6,
+    "median_uniform": 0.345,
+    "median_entropy": 4.91,
+    "median_warmfrac": 0.567,
+    "mean_diff": 78.8,
+    "conf": "low"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 35,
+    "dur": 36,
+    "mean_q": 0.875,
+    "median_sharp": 3070.8,
+    "median_fineratio": 0.186
+   },
+   {
+    "start": 37,
+    "end": 119,
+    "dur": 83,
+    "mean_q": 0.797,
+    "median_sharp": 2662.9,
+    "median_fineratio": 0.181
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    98.3,
+    121.2,
+    137.7
+   ],
+   "sharp": [
+    684.1,
+    2758.4,
+    4294.4
+   ],
+   "colorful": [
+    23.5,
+    37.0,
+    49.8
+   ],
+   "sat": [
+    0.182,
+    0.343,
+    0.48
+   ],
+   "entropy": [
+    5.28,
+    5.58,
+    5.73
+   ],
+   "fineratio": [
+    0.108,
+    0.183,
+    0.229
+   ],
+   "darkfrac_max": 0.141,
+   "brightfrac_max": 0.23
+  }
+ },
+ "REC-0019-A.mp4": {
+  "file": "REC-0019-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "A 清晰",
+  "refs": {
+   "P90_sharp": 3799.6,
+   "P90_edgefrac": 0.884,
+   "P90_colorful": 51.2,
+   "median_sharp": 2624.7,
+   "median_fineratio": 0.185
+  },
+  "bad_seconds": 0,
+  "usable_ratio": 1.0,
+  "mean_q": 0.84,
+  "q_p10": 0.655,
+  "blocked": [],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 119,
+    "dur": 120,
+    "mean_q": 0.84,
+    "median_sharp": 2624.7,
+    "median_fineratio": 0.185
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    99.8,
+    119.2,
+    137.4
+   ],
+   "sharp": [
+    1147.1,
+    2624.7,
+    4094.2
+   ],
+   "colorful": [
+    30.3,
+    41.6,
+    54.9
+   ],
+   "sat": [
+    0.208,
+    0.343,
+    0.484
+   ],
+   "entropy": [
+    5.26,
+    5.59,
+    5.75
+   ],
+   "fineratio": [
+    0.133,
+    0.185,
+    0.22
+   ],
+   "darkfrac_max": 0.054,
+   "brightfrac_max": 0.211
+  }
+ },
+ "REC-0020-A.mp4": {
+  "file": "REC-0020-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "B 中等",
+  "refs": {
+   "P90_sharp": 3204.4,
+   "P90_edgefrac": 0.843,
+   "P90_colorful": 71.3,
+   "median_sharp": 1752.4,
+   "median_fineratio": 0.194
+  },
+  "bad_seconds": 2,
+  "usable_ratio": 0.983,
+  "mean_q": 0.782,
+  "q_p10": 0.593,
+  "blocked": [
+   {
+    "start": 53,
+    "end": 53,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.234,
+    "mean_edge": 0.497,
+    "median_fineratio": 0.145,
+    "median_sharp": 751.0,
+    "median_luma": 122.6,
+    "median_lumastd": 68.8,
+    "median_uniform": 0.04,
+    "median_entropy": 5.51,
+    "median_warmfrac": 0.053,
+    "mean_diff": 37.9,
+    "conf": "low"
+   },
+   {
+    "start": 57,
+    "end": 57,
+    "dur": 1,
+    "label": "BLUR",
+    "label_txt": "低锐度/虚焦或运动模糊",
+    "mix": {
+     "BLUR": 1
+    },
+    "mean_det": 0.226,
+    "mean_edge": 0.495,
+    "median_fineratio": 0.147,
+    "median_sharp": 723.8,
+    "median_luma": 128.9,
+    "median_lumastd": 73.2,
+    "median_uniform": 0.064,
+    "median_entropy": 5.43,
+    "median_warmfrac": 0.07,
+    "mean_diff": 37.6,
+    "conf": "low"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 52,
+    "dur": 53,
+    "mean_q": 0.766,
+    "median_sharp": 2162.7,
+    "median_fineratio": 0.167
+   },
+   {
+    "start": 58,
+    "end": 119,
+    "dur": 62,
+    "mean_q": 0.81,
+    "median_sharp": 1696.3,
+    "median_fineratio": 0.209
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    90.5,
+    122.7,
+    142.0
+   ],
+   "sharp": [
+    738.7,
+    1752.4,
+    3804.3
+   ],
+   "colorful": [
+    28.4,
+    52.8,
+    73.5
+   ],
+   "sat": [
+    0.211,
+    0.471,
+    0.658
+   ],
+   "entropy": [
+    5.05,
+    5.39,
+    5.78
+   ],
+   "fineratio": [
+    0.131,
+    0.194,
+    0.239
+   ],
+   "darkfrac_max": 0.091,
+   "brightfrac_max": 0.312
+  }
+ },
+ "REC-0021-A.mp4": {
+  "file": "REC-0021-A.mp4",
+  "duration": 120.03,
+  "n_frames": 120,
+  "grade": "A 清晰",
+  "refs": {
+   "P90_sharp": 3665.1,
+   "P90_edgefrac": 0.866,
+   "P90_colorful": 68.6,
+   "median_sharp": 2256.4,
+   "median_fineratio": 0.204
+  },
+  "bad_seconds": 0,
+  "usable_ratio": 1.0,
+  "mean_q": 0.846,
+  "q_p10": 0.734,
+  "blocked": [],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 119,
+    "dur": 120,
+    "mean_q": 0.846,
+    "median_sharp": 2256.4,
+    "median_fineratio": 0.204
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    98.9,
+    116.0,
+    128.3
+   ],
+   "sharp": [
+    1336.4,
+    2256.4,
+    3922.7
+   ],
+   "colorful": [
+    39.3,
+    53.5,
+    71.5
+   ],
+   "sat": [
+    0.341,
+    0.576,
+    0.751
+   ],
+   "entropy": [
+    5.18,
+    5.41,
+    5.77
+   ],
+   "fineratio": [
+    0.147,
+    0.204,
+    0.254
+   ],
+   "darkfrac_max": 0.226,
+   "brightfrac_max": 0.229
+  }
+ },
+ "REC-0022-A.mp4": {
+  "file": "REC-0022-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "A 清晰",
+  "refs": {
+   "P90_sharp": 3847.8,
+   "P90_edgefrac": 0.866,
+   "P90_colorful": 50.2,
+   "median_sharp": 2197.2,
+   "median_fineratio": 0.188
+  },
+  "bad_seconds": 0,
+  "usable_ratio": 1.0,
+  "mean_q": 0.809,
+  "q_p10": 0.663,
+  "blocked": [],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 119,
+    "dur": 120,
+    "mean_q": 0.809,
+    "median_sharp": 2197.2,
+    "median_fineratio": 0.188
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    103.9,
+    118.5,
+    137.4
+   ],
+   "sharp": [
+    1213.2,
+    2197.2,
+    4515.3
+   ],
+   "colorful": [
+    25.4,
+    39.4,
+    56.4
+   ],
+   "sat": [
+    0.22,
+    0.401,
+    0.556
+   ],
+   "entropy": [
+    5.11,
+    5.48,
+    5.76
+   ],
+   "fineratio": [
+    0.142,
+    0.188,
+    0.237
+   ],
+   "darkfrac_max": 0.166,
+   "brightfrac_max": 0.34
+  }
+ },
+ "REC-0023-A.mp4": {
+  "file": "REC-0023-A.mp4",
+  "duration": 27.33,
+  "n_frames": 27,
+  "grade": "B 中等",
+  "refs": {
+   "P90_sharp": 3141.3,
+   "P90_edgefrac": 0.88,
+   "P90_colorful": 55.4,
+   "median_sharp": 1969.7,
+   "median_fineratio": 0.188
+  },
+  "bad_seconds": 0,
+  "usable_ratio": 1.0,
+  "mean_q": 0.825,
+  "q_p10": 0.644,
+  "blocked": [],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 26,
+    "dur": 27,
+    "mean_q": 0.825,
+    "median_sharp": 1969.7,
+    "median_fineratio": 0.188
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    104.2,
+    121.2,
+    136.1
+   ],
+   "sharp": [
+    1094.8,
+    1969.7,
+    3221.7
+   ],
+   "colorful": [
+    31.5,
+    40.1,
+    65.9
+   ],
+   "sat": [
+    0.284,
+    0.364,
+    0.667
+   ],
+   "entropy": [
+    5.16,
+    5.53,
+    5.79
+   ],
+   "fineratio": [
+    0.146,
+    0.188,
+    0.257
+   ],
+   "darkfrac_max": 0.055,
+   "brightfrac_max": 0.137
+  }
+ },
+ "REC-0024-A.mp4": {
+  "file": "REC-0024-A.mp4",
+  "duration": 120.13,
+  "n_frames": 120,
+  "grade": "B 中等",
+  "refs": {
+   "P90_sharp": 3632.9,
+   "P90_edgefrac": 0.883,
+   "P90_colorful": 40.8,
+   "median_sharp": 1858.5,
+   "median_fineratio": 0.136
+  },
+  "bad_seconds": 1,
+  "usable_ratio": 0.992,
+  "mean_q": 0.687,
+  "q_p10": 0.433,
+  "blocked": [
+   {
+    "start": 105,
+    "end": 105,
+    "dur": 1,
+    "label": "FLATS",
+    "label_txt": "单色平板/大面积天空",
+    "mix": {
+     "FLATS": 1
+    },
+    "mean_det": 0.092,
+    "mean_edge": 0.65,
+    "median_fineratio": 0.092,
+    "median_sharp": 333.5,
+    "median_luma": 118.9,
+    "median_lumastd": 23.8,
+    "median_uniform": 0.492,
+    "median_entropy": 4.49,
+    "median_warmfrac": 0.004,
+    "mean_diff": 23.4,
+    "conf": "low"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 104,
+    "dur": 105,
+    "mean_q": 0.711,
+    "median_sharp": 2068.6,
+    "median_fineratio": 0.138
+   },
+   {
+    "start": 106,
+    "end": 119,
+    "dur": 14,
+    "mean_q": 0.534,
+    "median_sharp": 901.5,
+    "median_fineratio": 0.113
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    95.4,
+    112.7,
+    128.1
+   ],
+   "sharp": [
+    463.7,
+    1858.5,
+    4152.4
+   ],
+   "colorful": [
+    17.2,
+    32.0,
+    44.7
+   ],
+   "sat": [
+    0.161,
+    0.287,
+    0.369
+   ],
+   "entropy": [
+    4.98,
+    5.37,
+    5.65
+   ],
+   "fineratio": [
+    0.084,
+    0.136,
+    0.188
+   ],
+   "darkfrac_max": 0.085,
+   "brightfrac_max": 0.082
+  }
+ },
+ "REC-0025-A.mp4": {
+  "file": "REC-0025-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "B 中等",
+  "refs": {
+   "P90_sharp": 2698.0,
+   "P90_edgefrac": 0.842,
+   "P90_colorful": 43.2,
+   "median_sharp": 1201.0,
+   "median_fineratio": 0.126
+  },
+  "bad_seconds": 2,
+  "usable_ratio": 0.983,
+  "mean_q": 0.653,
+  "q_p10": 0.409,
+  "blocked": [
+   {
+    "start": 16,
+    "end": 16,
+    "dur": 1,
+    "label": "FLATS",
+    "label_txt": "单色平板/大面积天空",
+    "mix": {
+     "FLATS": 1
+    },
+    "mean_det": 0.105,
+    "mean_edge": 0.725,
+    "median_fineratio": 0.083,
+    "median_sharp": 282.4,
+    "median_luma": 125.7,
+    "median_lumastd": 25.0,
+    "median_uniform": 0.492,
+    "median_entropy": 4.58,
+    "median_warmfrac": 0.005,
+    "mean_diff": 22.7,
+    "conf": "low"
+   },
+   {
+    "start": 28,
+    "end": 28,
+    "dur": 1,
+    "label": "FLATS",
+    "label_txt": "单色平板/大面积天空",
+    "mix": {
+     "FLATS": 1
+    },
+    "mean_det": 0.146,
+    "mean_edge": 0.783,
+    "median_fineratio": 0.09,
+    "median_sharp": 393.5,
+    "median_luma": 131.9,
+    "median_lumastd": 24.2,
+    "median_uniform": 0.445,
+    "median_entropy": 4.61,
+    "median_warmfrac": 0.012,
+    "mean_diff": 28.7,
+    "conf": "low"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 15,
+    "dur": 16,
+    "mean_q": 0.493,
+    "median_sharp": 642.0,
+    "median_fineratio": 0.102
+   },
+   {
+    "start": 17,
+    "end": 27,
+    "dur": 11,
+    "mean_q": 0.493,
+    "median_sharp": 801.4,
+    "median_fineratio": 0.101
+   },
+   {
+    "start": 29,
+    "end": 119,
+    "dur": 91,
+    "mean_q": 0.706,
+    "median_sharp": 1437.6,
+    "median_fineratio": 0.134
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    104.1,
+    117.7,
+    137.3
+   ],
+   "sharp": [
+    338.8,
+    1201.0,
+    3103.6
+   ],
+   "colorful": [
+    19.2,
+    29.6,
+    45.7
+   ],
+   "sat": [
+    0.144,
+    0.235,
+    0.356
+   ],
+   "entropy": [
+    4.93,
+    5.33,
+    5.74
+   ],
+   "fineratio": [
+    0.082,
+    0.126,
+    0.176
+   ],
+   "darkfrac_max": 0.159,
+   "brightfrac_max": 0.147
+  }
+ },
+ "REC-0026-A.mp4": {
+  "file": "REC-0026-A.mp4",
+  "duration": 120.06,
+  "n_frames": 120,
+  "grade": "B 中等",
+  "refs": {
+   "P90_sharp": 2592.1,
+   "P90_edgefrac": 0.872,
+   "P90_colorful": 43.5,
+   "median_sharp": 1392.8,
+   "median_fineratio": 0.116
+  },
+  "bad_seconds": 0,
+  "usable_ratio": 1.0,
+  "mean_q": 0.682,
+  "q_p10": 0.484,
+  "blocked": [],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 119,
+    "dur": 120,
+    "mean_q": 0.682,
+    "median_sharp": 1392.8,
+    "median_fineratio": 0.116
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    97.8,
+    113.5,
+    126.5
+   ],
+   "sharp": [
+    467.6,
+    1392.8,
+    2859.8
+   ],
+   "colorful": [
+    27.4,
+    34.7,
+    47.0
+   ],
+   "sat": [
+    0.2,
+    0.299,
+    0.383
+   ],
+   "entropy": [
+    5.15,
+    5.42,
+    5.6
+   ],
+   "fineratio": [
+    0.077,
+    0.116,
+    0.163
+   ],
+   "darkfrac_max": 0.054,
+   "brightfrac_max": 0.102
+  }
+ },
+ "REC-0027-A.mp4": {
+  "file": "REC-0027-A.mp4",
+  "duration": 50.18,
+  "n_frames": 50,
+  "grade": "B 中等",
+  "refs": {
+   "P90_sharp": 3655.4,
+   "P90_edgefrac": 0.898,
+   "P90_colorful": 46.5,
+   "median_sharp": 2192.4,
+   "median_fineratio": 0.143
+  },
+  "bad_seconds": 1,
+  "usable_ratio": 0.98,
+  "mean_q": 0.752,
+  "q_p10": 0.547,
+  "blocked": [
+   {
+    "start": 10,
+    "end": 10,
+    "dur": 1,
+    "label": "FLATS",
+    "label_txt": "单色平板/大面积天空",
+    "mix": {
+     "FLATS": 1
+    },
+    "mean_det": 0.195,
+    "mean_edge": 0.344,
+    "median_fineratio": 0.181,
+    "median_sharp": 714.0,
+    "median_luma": 215.2,
+    "median_lumastd": 59.7,
+    "median_uniform": 0.624,
+    "median_entropy": 3.5,
+    "median_warmfrac": 0.002,
+    "mean_diff": 128.9,
+    "conf": "low"
+   }
+  ],
+  "usable_intervals": [
+   {
+    "start": 0,
+    "end": 9,
+    "dur": 10,
+    "mean_q": 0.683,
+    "median_sharp": 1822.2,
+    "median_fineratio": 0.134
+   },
+   {
+    "start": 11,
+    "end": 49,
+    "dur": 39,
+    "mean_q": 0.772,
+    "median_sharp": 2610.1,
+    "median_fineratio": 0.149
+   }
+  ],
+  "transitions": [],
+  "stats": {
+   "luma": [
+    82.8,
+    116.2,
+    140.4
+   ],
+   "sharp": [
+    719.7,
+    2192.4,
+    4282.4
+   ],
+   "colorful": [
+    31.5,
+    37.8,
+    52.9
+   ],
+   "sat": [
+    0.205,
+    0.285,
+    0.416
+   ],
+   "entropy": [
+    5.14,
+    5.49,
+    5.77
+   ],
+   "fineratio": [
+    0.097,
+    0.143,
+    0.204
+   ],
+   "darkfrac_max": 0.214,
+   "brightfrac_max": 0.663
+  }
+ }
+}

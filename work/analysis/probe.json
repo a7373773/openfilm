@@ -1,0 +1,98 @@
+{
+ "REC-0001-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19629 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0002-A.mp4": {
+  "duration": 120.13,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19130 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0003-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19827 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0004-A.mp4": {
+  "duration": 58.24,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19465 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0005-A.mp4": {
+  "duration": 120.19,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19034 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0006-A.mp4": {
+  "duration": 120.03,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19206 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0007-A.mp4": {
+  "duration": 120.13,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19690 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0008-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19204 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0012-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19191 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0013-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19209 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0014-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19024 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0015-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 18785 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0016-A.mp4": {
+  "duration": 67.84,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 18911 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0017-A.mp4": {
+  "duration": 120.13,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19272 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0018-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 18909 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0019-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 18865 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0020-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 18922 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0021-A.mp4": {
+  "duration": 120.03,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 18875 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0022-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 18782 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0023-A.mp4": {
+  "duration": 27.33,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 19229 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0024-A.mp4": {
+  "duration": 120.13,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 18824 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0025-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 18765 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0026-A.mp4": {
+  "duration": 120.06,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 18895 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ },
+ "REC-0027-A.mp4": {
+  "duration": 50.18,
+  "vinfo": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(progressive), 3840x2160, 18762 kb/s, 60 fps, 60 tbr, 90k tbn (default)"
+ }
+}

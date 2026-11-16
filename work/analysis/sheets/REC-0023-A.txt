@@ -1,0 +1,31 @@
+sheet: REC-0023-A.jpg  grid=10 cols x 3 rows, cell=192x108px
+t (seconds) = row*10 + col (0-based). frame file = frames/REC-0023-A/sec_%04d.jpg (1-based index = t+1)
+cell label = t in seconds
+
+row 0 col 0 -> t=0 s (= 0:00)  sec_0001.jpg
+row 0 col 1 -> t=1 s (= 0:01)  sec_0002.jpg
+row 0 col 2 -> t=2 s (= 0:02)  sec_0003.jpg
+row 0 col 3 -> t=3 s (= 0:03)  sec_0004.jpg
+row 0 col 4 -> t=4 s (= 0:04)  sec_0005.jpg
+row 0 col 5 -> t=5 s (= 0:05)  sec_0006.jpg
+row 0 col 6 -> t=6 s (= 0:06)  sec_0007.jpg
+row 0 col 7 -> t=7 s (= 0:07)  sec_0008.jpg
+row 0 col 8 -> t=8 s (= 0:08)  sec_0009.jpg
+row 0 col 9 -> t=9 s (= 0:09)  sec_0010.jpg
+row 1 col 0 -> t=10 s (= 0:10)  sec_0011.jpg
+row 1 col 1 -> t=11 s (= 0:11)  sec_0012.jpg
+row 1 col 2 -> t=12 s (= 0:12)  sec_0013.jpg
+row 1 col 3 -> t=13 s (= 0:13)  sec_0014.jpg
+row 1 col 4 -> t=14 s (= 0:14)  sec_0015.jpg
+row 1 col 5 -> t=15 s (= 0:15)  sec_0016.jpg
+row 1 col 6 -> t=16 s (= 0:16)  sec_0017.jpg
+row 1 col 7 -> t=17 s (= 0:17)  sec_0018.jpg
+row 1 col 8 -> t=18 s (= 0:18)  sec_0019.jpg
+row 1 col 9 -> t=19 s (= 0:19)  sec_0020.jpg
+row 2 col 0 -> t=20 s (= 0:20)  sec_0021.jpg
+row 2 col 1 -> t=21 s (= 0:21)  sec_0022.jpg
+row 2 col 2 -> t=22 s (= 0:22)  sec_0023.jpg
+row 2 col 3 -> t=23 s (= 0:23)  sec_0024.jpg
+row 2 col 4 -> t=24 s (= 0:24)  sec_0025.jpg
+row 2 col 5 -> t=25 s (= 0:25)  sec_0026.jpg
+row 2 col 6 -> t=26 s (= 0:26)  sec_0027.jpg
