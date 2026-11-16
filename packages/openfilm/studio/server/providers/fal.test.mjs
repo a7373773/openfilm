@@ -238,3 +238,12 @@ test('a person speaking a recording (--audio): from a picture or a clip, the lip
   assert.deepEqual([voiced.input.audio_urls, voiced.input.image_urls.length, voiced.input.image_url], [['https://v3b.fal.media/files/clip.mp4'], 1, undefined]);
   await assert.rejects(fal.run('video', { out: 'x', prompt: 'p', voice: 'assets/audio/vo/line.wav' }, { ...ctx(files), model: 'seedance-2.0' }), /goes with a picture or a clip/);
 });
+
+test('a server timeout leaves a durably checkpointed job running for recovery',async()=>{
+  seen.length=0;reply=queue('bytedance/seedance-2.0/text-to-video',{},Infinity);
+  const stop=new AbortController();let saved;
+  const run=fal.run('video',{out:'recover-original',prompt:'clouds'},{...ctx({},stop.signal),checkpoint:async job=>{saved=job;}});
+  await new Promise(done=>setTimeout(done,30));stop.abort();await assert.rejects(run);
+  await new Promise(done=>setTimeout(done,20));assert.equal(saved.request_id,'r1');
+  assert.ok(!seen.some(call=>call.method==='PUT'),'the service must poll the accepted job after a restart, not cancel it at a transport deadline');
+});
