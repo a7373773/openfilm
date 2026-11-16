@@ -6,6 +6,8 @@ node_modules/
 dist/
 .release/
 *.tsbuildinfo
+__pycache__/
+*.pyc
 
 # from-source runs: their own state, projects and exports (`pnpm dev`, `pnpm dev:desktop`)
 .dev/
@@ -20,3 +22,34 @@ dist/
 # OS and editors
 .DS_Store
 *.log
+
+# local film projects: their notes and scripts are kept, the media is not
+work/**/*.jpg
+work/**/*.jpeg
+work/**/*.png
+work/**/*.gif
+work/**/*.webp
+work/**/*.bmp
+work/**/*.tif
+work/**/*.tiff
+work/**/*.heic
+work/**/*.mp4
+work/**/*.mov
+work/**/*.mkv
+work/**/*.avi
+work/**/*.webm
+work/**/*.mp3
+work/**/*.wav
+work/**/*.m4a
+work/**/*.aac
+work/**/*.flac
+work/**/*.onnx
+work/vision/cache/
+成片/**/*.jpg
+成片/**/*.jpeg
+成片/**/*.png
+成片/**/*.mp4
+成片/**/*.mov
+成片/**/*.mp3
+成片/**/*.wav
+素材/
